@@ -3,10 +3,11 @@ import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
+import "../styles/_main.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
-import "typeface-merriweather";
-import "typeface-oswald";
+import "typeface-playfair-display";
+import "typeface-fauna-one";
 
 const TemplateWrapper = ({ children }) => {
     const { title, description } = useSiteMetadata();

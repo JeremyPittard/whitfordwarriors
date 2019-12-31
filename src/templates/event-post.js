@@ -69,6 +69,7 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 date(formatString: "MMMM DD, YYYY")
+                eventDate(formatString: "MMMM DD, YYYY")
                 title
                 description
                 type
