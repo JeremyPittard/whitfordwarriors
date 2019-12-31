@@ -29,6 +29,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "typeface-merriweather": "0.0.72",
+    "typeface-oswald": "0.0.75",
     "uuid": "^3.2.1"
   },
   "keywords": [
