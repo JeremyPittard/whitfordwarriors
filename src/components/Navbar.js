@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
 import logo from "../img/logo.svg";
+import TransitionLink from "gatsby-plugin-transition-link";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Navbar = class extends React.Component {
     constructor(props) {
@@ -37,9 +39,9 @@ const Navbar = class extends React.Component {
             <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
                 <div className="container">
                     <div className="navbar-brand">
-                        <Link to="/" className="navbar-item" title="Logo">
+                        <AniLink cover direction="right" bg="#3e4189" hex="#3e4189" to="/" className="navbar-item" title="Logo">
                             <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-                        </Link>
+                        </AniLink>
                         {/* Hamburger menu */}
                         <div className={`navbar-burger burger ${this.state.navBarActiveClass}`} data-target="navMenu" onClick={() => this.toggleHamburger()}>
                             <span />
@@ -49,21 +51,21 @@ const Navbar = class extends React.Component {
                     </div>
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
                         <div className="navbar-start has-text-centered">
-                            <Link className="navbar-item" to="/about">
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/about">
                                 About
-                            </Link>
-                            <Link className="navbar-item" to="/products">
+                            </AniLink>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/products">
                                 Products
-                            </Link>
-                            <Link className="navbar-item" to="/blog">
+                            </AniLink>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/blog">
                                 Blog
-                            </Link>
-                            <Link className="navbar-item" to="/contact">
+                            </AniLink>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact">
                                 Contact
-                            </Link>
-                            <Link className="navbar-item" to="/contact/examples">
+                            </AniLink>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact/examples">
                                 Form Examples
-                            </Link>
+                            </AniLink>
                         </div>
                         <div className="navbar-end has-text-centered">
                             <a className="navbar-item" href="https://github.com/netlify-templates/gatsby-starter-netlify-cms" target="_blank" rel="noopener noreferrer">

@@ -37,7 +37,7 @@ const eventsPost = ({ data }) => {
     const { markdownRemark: post } = data;
 
     return (
-        <Layout>
+        <>
             <eventsPostTemplate
                 content={post.html}
                 contentComponent={HTMLContent}
@@ -50,7 +50,7 @@ const eventsPost = ({ data }) => {
                 }
                 title={post.frontmatter.title}
             />
-        </Layout>
+        </>
     );
 };
 

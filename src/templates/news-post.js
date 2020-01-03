@@ -37,7 +37,7 @@ const NewsPost = ({ data }) => {
     const { markdownRemark: post } = data;
 
     return (
-        <Layout>
+        <>
             <NewsPostTemplate
                 content={post.html}
                 contentComponent={HTMLContent}
@@ -50,7 +50,7 @@ const NewsPost = ({ data }) => {
                 }
                 title={post.frontmatter.title}
             />
-        </Layout>
+        </>
     );
 };
 
