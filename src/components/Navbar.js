@@ -36,7 +36,7 @@ const Navbar = class extends React.Component {
 
     render() {
         return (
-            <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+            <nav className="navbar is-fixed-top" role="navigation" aria-label="main-navigation">
                 <div className="container">
                     <div className="navbar-brand">
                         <AniLink cover direction="right" bg="#3e4189" hex="#3e4189" to="/" className="navbar-item" title="Logo">
@@ -52,27 +52,26 @@ const Navbar = class extends React.Component {
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
                         <div className="navbar-start has-text-centered">
                             <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/about">
-                                About
+                                News
                             </AniLink>
                             <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/products">
-                                Products
+                                Events
                             </AniLink>
                             <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/blog">
-                                Blog
+                                Honour Boards
                             </AniLink>
                             <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact">
+                                Sponsors
+                            </AniLink>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact/examples">
                                 Contact
                             </AniLink>
                             <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact/examples">
-                                Form Examples
+                                Merch
                             </AniLink>
-                        </div>
-                        <div className="navbar-end has-text-centered">
-                            <a className="navbar-item" href="https://github.com/netlify-templates/gatsby-starter-netlify-cms" target="_blank" rel="noopener noreferrer">
-                                <span className="icon">
-                                    <img src={github} alt="Github" />
-                                </span>
-                            </a>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact/examples">
+                                Policies
+                            </AniLink>
                         </div>
                     </div>
                 </div>

@@ -51,6 +51,7 @@ collections:
       fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "sponsor-post" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Major Sponsor", name: "isMajor", widget: "boolean", required: false }
           - { label: "Featured Image", name: "featuredimage", widget: image }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Website", name: "website", widget: "string", required: false }
