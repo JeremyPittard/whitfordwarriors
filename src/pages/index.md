@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Whitford Warriors
 image: ''
-heading: Great coffee with a conscience
+heading: Football & Netball club
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
