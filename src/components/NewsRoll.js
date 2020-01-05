@@ -51,8 +51,8 @@ const Posts = () => {
                             featuredpost
                             featuredimage {
                                 childImageSharp {
-                                    fluid(maxWidth: 720, quality: 100) {
-                                        ...GatsbyImageSharpFluid
+                                    fluid(maxWidth: 720, quality: 100, traceSVG: { color: "#3e4189" }) {
+                                        ...GatsbyImageSharpFluid_tracedSVG
                                     }
                                 }
                             }

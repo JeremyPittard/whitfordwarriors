@@ -5,11 +5,11 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 const FeatureGrid = ({ gridItems }) => (
     <div className="columns is-multiline">
         {gridItems.map((item, index) => {
-            let i = index + 1;
-            let delay = i % 2 ? "0" : "500";
+            // let i = index + 1;
+            // let delay = i % 2 ? "0" : "500";
             return (
                 <div key={item.text} className="column is-6 ">
-                    <section className="section" data-sal="slide-up" data-sal-duration="600" data-sal-delay={delay}>
+                    <section className="section">
                         <div className="has-text-centered">
                             <div
                                 style={{

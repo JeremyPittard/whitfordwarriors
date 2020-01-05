@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import Colours from "../utils/colours";
+import SponsorsRoll from "../components/sponsorsRoll";
 
 export const IndexPageTemplate = ({ image, title, subheading, mainpitch, description, intro, hideImage }) => {
     return (
@@ -77,6 +78,7 @@ export const IndexPageTemplate = ({ image, title, subheading, mainpitch, descrip
                                     </div>
                                     <div className="column is-12">
                                         <h3 className="has-text-weight-semibold is-size-2 blue-text">Our Friends</h3>
+                                        <SponsorsRoll />
                                     </div>
                                 </div>
                             </div>

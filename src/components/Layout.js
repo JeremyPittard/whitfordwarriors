@@ -11,6 +11,7 @@ import "typeface-montserrat";
 
 const TemplateWrapper = ({ children }) => {
     const { title, description } = useSiteMetadata();
+
     return (
         <div>
             <Helmet>
@@ -33,6 +34,7 @@ const TemplateWrapper = ({ children }) => {
             <Navbar />
             <div>{children}</div>
             <Footer />
+            <script>sal();</script>
         </div>
     );
 };

@@ -1,8 +1,8 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-export const BlogRoll = props => {
+export const SponsorsRoll = props => {
     const { data } = props;
     const { edges: posts } = data.allMarkdownRemark;
 
@@ -15,23 +15,18 @@ export const BlogRoll = props => {
                     return (
                         <>
                             <div className="is-parent column is-4" key={post.id}>
-                                <Link to={post.fields.slug} className="tile c-tile is-child box">
+                                <a href={post.frontmatter.website} className="tile c-tile is-child box" target="_blank">
                                     <article>
                                         <PreviewCompatibleImage
                                             imageInfo={{
                                                 image: post.frontmatter.featuredimage,
-                                                alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                                                alt: ` ${post.frontmatter.title}`,
                                                 class: `full-width-image`
                                             }}
                                         />
                                         <h3>{post.frontmatter.title}</h3>
-                                        {post.frontmatter.eventDate ? (
-                                            <p className="subtitle blue-text is-size-7">event on: {post.frontmatter.eventDate}</p>
-                                        ) : (
-                                            <p className="subtitle blue-text is-size-7">published on: {post.frontmatter.date}</p>
-                                        )}
                                     </article>
-                                </Link>
+                                </a>
                             </div>
                         </>
                     );
@@ -42,8 +37,8 @@ export const BlogRoll = props => {
 
 const Posts = () => {
     const data = useStaticQuery(graphql`
-        query BlogRollQuery {
-            allMarkdownRemark(limit: 6, sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { type: { eq: "post" } } }) {
+        query SponsorsRollQuery {
+            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { isMajor: { eq: true } } }) {
                 edges {
                     node {
                         excerpt(pruneLength: 400)
@@ -54,13 +49,12 @@ const Posts = () => {
                         frontmatter {
                             title
                             templateKey
-                            date(formatString: "Do MMM, YYYY")
-                            eventDate(formatString: "Do MMM, YYYY")
-                            featuredpost
-                            featuredimage {
+                            isMajor
+                            website
+                            logo {
                                 childImageSharp {
-                                    fluid(maxWidth: 600, maxHeight: 450, quality: 80, traceSVG: { color: "#3e4189" }) {
-                                        ...GatsbyImageSharpFluid_tracedSVG
+                                    fluid(maxWidth: 200, quality: 100) {
+                                        ...GatsbyImageSharpFluid
                                     }
                                 }
                             }
@@ -70,6 +64,6 @@ const Posts = () => {
             }
         }
     `);
-    return <BlogRoll data={data} />;
+    return <SponsorsRoll data={data} />;
 };
 export default Posts;
