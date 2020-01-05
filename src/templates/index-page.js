@@ -6,94 +6,92 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import Colours from "../utils/colours";
 
-export const IndexPageTemplate = ({ image, title, subheading, mainpitch, description, intro }) => (
-    <div>
-        <div
-            className="full-width-image margin-top-0"
-            style={{
-                backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
-                backgroundPosition: `top left`,
-                backgroundAttachment: `fixed`
-            }}
-        >
+export const IndexPageTemplate = ({ image, title, subheading, mainpitch, description, intro, hideImage }) => {
+    return (
+        <div>
             <div
+                className="full-width-image margin-top-0"
                 style={{
-                    display: "flex",
-                    height: "150px",
-                    lineHeight: "1",
-                    justifyContent: "space-around",
-                    alignItems: "left",
-                    flexDirection: "column"
+                    backgroundImage: hideImage ? "" : `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
+                    backgroundColor: Colours.blue,
+                    backgroundPosition: `top left`,
+                    backgroundAttachment: `fixed`
                 }}
             >
-                <h1
-                    className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                <div
                     style={{
-                        backgroundColor: Colours.blue,
-                        color: "white",
+                        display: "flex",
+                        height: "150px",
                         lineHeight: "1",
-                        padding: "0.25em"
+                        justifyContent: "space-around",
+                        alignItems: "left",
+                        flexDirection: "column"
                     }}
                 >
-                    {title}
-                </h1>
-                <h2
-                    className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                    style={{
-                        backgroundColor: Colours.blue,
-                        color: "white",
-                        lineHeight: "1",
-                        padding: "0.25em"
-                    }}
-                >
-                    {subheading}
-                </h2>
+                    <h1
+                        className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                        style={{
+                            backgroundColor: Colours.blue,
+                            color: "white",
+                            lineHeight: "1",
+                            padding: "0.25em"
+                        }}
+                    >
+                        {title}
+                    </h1>
+                    <h2
+                        className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                        style={{
+                            backgroundColor: Colours.blue,
+                            color: "white",
+                            lineHeight: "1",
+                            padding: "0.25em"
+                        }}
+                    >
+                        {subheading}
+                    </h2>
+                </div>
             </div>
-        </div>
-        <section className="section section--gradient">
-            <div className="container">
-                <div className="section">
-                    <div className="columns">
-                        <div className="column is-10 is-offset-1">
-                            <div className="content">
+            <section className="section section--gradient">
+                <div className="container">
+                    <div className="section">
+                        <div className="columns">
+                            <div className="column is-10 is-offset-1">
                                 <div className="content">
-                                    <div className="tile">
-                                        <h1 className="title">{mainpitch.title}</h1>
+                                    <div className="content">
+                                        <div className="tile">
+                                            <h1 className="title">{mainpitch.title}</h1>
+                                        </div>
+                                        <div className="tile">
+                                            <h3 className="subtitle">{mainpitch.description}</h3>
+                                        </div>
                                     </div>
-                                    <div className="tile">
-                                        <h3 className="subtitle">{mainpitch.description}</h3>
+                                    <div className="columns">
+                                        <div className="column is-12">
+                                            <p>{description}</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="columns">
+                                    <Features gridItems={intro.blurbs} />
+                                    <div className="columns">
+                                        <div className="column is-12 has-text-centered">
+                                            <Link className="btn" to="/products">
+                                                See all products
+                                            </Link>
+                                        </div>
+                                    </div>
                                     <div className="column is-12">
-                                        <p>{description}</p>
-                                    </div>
-                                </div>
-                                <Features gridItems={intro.blurbs} />
-                                <div className="columns">
-                                    <div className="column is-12 has-text-centered">
-                                        <Link className="btn" to="/products">
-                                            See all products
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="column is-12">
-                                    <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
-                                    <BlogRoll />
-                                    <div className="column is-12 has-text-centered">
-                                        <Link className="btn" to="/blog">
-                                            Load more
-                                        </Link>
+                                        <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
+                                        <BlogRoll />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-);
+            </section>
+        </div>
+    );
+};
 
 IndexPageTemplate.propTypes = {
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -103,7 +101,8 @@ IndexPageTemplate.propTypes = {
     description: PropTypes.string,
     intro: PropTypes.shape({
         blurbs: PropTypes.array
-    })
+    }),
+    hideImage: PropTypes.bool
 };
 
 const IndexPage = ({ data }) => {
@@ -111,7 +110,15 @@ const IndexPage = ({ data }) => {
 
     return (
         <>
-            <IndexPageTemplate image={frontmatter.image} title={frontmatter.title} subheading={frontmatter.subheading} mainpitch={frontmatter.mainpitch} description={frontmatter.description} intro={frontmatter.intro} />
+            <IndexPageTemplate
+                image={frontmatter.image}
+                hideImage={frontmatter.hideImage}
+                title={frontmatter.title}
+                subheading={frontmatter.subheading}
+                mainpitch={frontmatter.mainpitch}
+                description={frontmatter.description}
+                intro={frontmatter.intro}
+            />
         </>
     );
 };
@@ -139,6 +146,7 @@ export const pageQuery = graphql`
                         }
                     }
                 }
+                hideImage
                 mainpitch {
                     title
                     description

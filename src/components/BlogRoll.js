@@ -36,7 +36,7 @@ export const BlogRoll = props => {
 const Posts = () => {
     const data = useStaticQuery(graphql`
         query BlogRollQuery {
-            allMarkdownRemark(limit: 10, sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { type: { eq: "post" } } }) {
+            allMarkdownRemark(limit: 6, sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { type: { eq: "post" } } }) {
                 edges {
                     node {
                         excerpt(pruneLength: 400)
