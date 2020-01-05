@@ -4,12 +4,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", serif;
+    font-family: "Raleway", sans-serif;
     line-height: 1.2 !important;
 }
 
 body {
-    font-family: "Fauna One", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 2;
     letter-spacing: 125%;
 }
@@ -19,5 +19,5 @@ a {
 }
 
 .blue-text {
-    color: $blue-text;
+    color: $blue-text !important;
 }

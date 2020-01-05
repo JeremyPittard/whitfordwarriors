@@ -6,8 +6,8 @@ import "./all.sass";
 import "../styles/_main.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
-import "typeface-playfair-display";
-import "typeface-fauna-one";
+import "typeface-raleway";
+import "typeface-montserrat";
 
 const TemplateWrapper = ({ children }) => {
     const { title, description } = useSiteMetadata();
