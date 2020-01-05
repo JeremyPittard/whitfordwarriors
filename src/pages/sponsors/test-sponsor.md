@@ -2,7 +2,7 @@
 templateKey: sponsor-post
 title: test sponsor
 isMajor: true
-featuredimage: /img/apple-touch-icon.png
+logo: /img/logo.svg
 description: 'our sponsor  '
 website: 'https://www.google.com'
 ---
