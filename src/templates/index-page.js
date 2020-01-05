@@ -6,7 +6,7 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import Colours from "../utils/colours";
 
-export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
+export const IndexPageTemplate = ({ image, title, subheading, mainpitch, description, intro }) => (
     <div>
         <div
             className="full-width-image margin-top-0"
@@ -66,7 +66,6 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
                                 </div>
                                 <div className="columns">
                                     <div className="column is-12">
-                                        <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
                                         <p>{description}</p>
                                     </div>
                                 </div>
@@ -99,7 +98,6 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
 IndexPageTemplate.propTypes = {
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     title: PropTypes.string,
-    heading: PropTypes.string,
     subheading: PropTypes.string,
     mainpitch: PropTypes.object,
     description: PropTypes.string,
@@ -113,15 +111,7 @@ const IndexPage = ({ data }) => {
 
     return (
         <>
-            <IndexPageTemplate
-                image={frontmatter.image}
-                title={frontmatter.title}
-                heading={frontmatter.heading}
-                subheading={frontmatter.subheading}
-                mainpitch={frontmatter.mainpitch}
-                description={frontmatter.description}
-                intro={frontmatter.intro}
-            />
+            <IndexPageTemplate image={frontmatter.image} title={frontmatter.title} subheading={frontmatter.subheading} mainpitch={frontmatter.mainpitch} description={frontmatter.description} intro={frontmatter.intro} />
         </>
     );
 };
@@ -141,6 +131,7 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
             frontmatter {
                 title
+                subheading
                 image {
                     childImageSharp {
                         fluid(maxWidth: 2048, quality: 100) {
@@ -148,8 +139,6 @@ export const pageQuery = graphql`
                         }
                     }
                 }
-                heading
-                subheading
                 mainpitch {
                     title
                     description
@@ -166,8 +155,6 @@ export const pageQuery = graphql`
                         }
                         text
                     }
-                    heading
-                    description
                 }
             }
         }
