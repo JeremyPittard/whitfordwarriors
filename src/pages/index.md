@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Whitford Warriors
-image: ''
+image: /img/products-grid1.jpg
 subheading: Football & Netball Club
 mainpitch:
   title: Why Kaldi
