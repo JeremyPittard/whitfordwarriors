@@ -21,9 +21,7 @@ export const NewsRoll = props => {
                                         }}
                                     />
                                     <h3>{post.frontmatter.title}</h3>
-                                    <p className="subtitle">
-                                        {post.frontmatter.date} {post.fields.slug}
-                                    </p>
+                                    <p className="subtitle blue-text is-size-7">published on: {post.frontmatter.date}</p>
                                 </article>
                             </Link>
                         </div>

@@ -35,7 +35,6 @@ const TemplateWrapper = ({ children }) => {
             <Navbar />
             <div>{children}</div>
             <Footer />
-            <script>sal();</script>
         </div>
     );
 };
