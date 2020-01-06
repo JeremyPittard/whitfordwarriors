@@ -48,25 +48,25 @@ const Navbar = class extends React.Component {
                     </div>
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
                         <div className="navbar-start has-text-centered">
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/about">
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/news">
                                 News
                             </AniLink>
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/products">
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/events">
                                 Events
                             </AniLink>
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/blog">
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/honour-boards">
                                 Honour Boards
                             </AniLink>
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact">
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/sponsors">
                                 Sponsors
                             </AniLink>
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact/examples">
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact">
                                 Contact
                             </AniLink>
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact/examples">
+                            <a className="navbar-item" href="https://clubshop.net.au/whitfordwarriors/" target="_blank" rel="noopener norel">
                                 Merch
-                            </AniLink>
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/contact/examples">
+                            </a>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
                                 Policies
                             </AniLink>
                         </div>
