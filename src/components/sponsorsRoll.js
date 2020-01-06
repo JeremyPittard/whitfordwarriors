@@ -47,8 +47,8 @@ const Posts = () => {
                             isMajor
                             logo {
                                 childImageSharp {
-                                    fixed(width: 150, traceSVG: { color: "#3e4189" }) {
-                                        ...GatsbyImageSharpFixed_tracedSVG
+                                    fixed(width: 150) {
+                                        ...GatsbyImageSharpFixed
                                     }
                                 }
                             }

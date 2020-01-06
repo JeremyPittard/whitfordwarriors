@@ -71,8 +71,8 @@ export const pageQuery = graphql`
                 isMajor
                 logo {
                     childImageSharp {
-                        fluid(maxWidth: 600, maxHeight: 450, quality: 80, traceSVG: { color: "#3e4189" }) {
-                            ...GatsbyImageSharpFluid_tracedSVG
+                        fluid(maxWidth: 600, maxHeight: 450, quality: 80) {
+                            ...GatsbyImageSharpFluid
                         }
                     }
                 }
