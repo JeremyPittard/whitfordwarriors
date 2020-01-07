@@ -1,6 +1,6 @@
 import React from "react";
 
-import NewsRoll from "../../components/NewsRoll";
+import FullSponsorsRoll from "../../components/fullSponsorsRoll";
 
 export default class BlogIndexPage extends React.Component {
     render() {
@@ -27,7 +27,7 @@ export default class BlogIndexPage extends React.Component {
                 <section className="section">
                     <div className="container">
                         <div className="content">
-                            <NewsRoll />
+                            <FullSponsorsRoll />
                         </div>
                     </div>
                 </section>

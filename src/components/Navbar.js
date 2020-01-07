@@ -50,11 +50,11 @@ const Navbar = class extends React.Component {
                             <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/news">
                                 News
                             </AniLink>
-                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/events">
+                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/">
                                 Events
                             </AniLink>
                             <div className="navbar-item has-dropdown is-hoverable">
-                                <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/honour-boards">
+                                <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/">
                                     Honour Boards
                                 </AniLink>
                                 <div className="navbar-dropdown">
@@ -67,7 +67,7 @@ const Navbar = class extends React.Component {
                                     <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
                                         Policiy 4
                                     </AniLink>
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
+                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/">
                                         Policiy 5
                                     </AniLink>
                                 </div>
