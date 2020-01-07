@@ -14,6 +14,7 @@ public_folder: /img
 collections:
     - name: "news"
       label: "News"
+      label_singular: "Article"
       folder: "src/pages/news"
       create: true
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -29,6 +30,7 @@ collections:
 
     - name: "events"
       label: "Events"
+      label_singular: "Event"
       folder: "src/pages/events"
       create: true
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -58,6 +60,7 @@ collections:
 
     - name: "boards"
       label: "Honour Boards"
+      label_singular: "Honour Board"
       folder: "src/pages/honour-boards"
       create: true
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -69,12 +72,13 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
 
     - name: "Policies"
-      label: "policies"
+      label: "Policies"
+      label_singular: "Policy"
       folder: "src/pages/policies"
       create: true
       slug: "{{slug}}"
       fields:
-          - { label: "Title", name: "title", widget: "stringg" }
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Document", name: "document", widget: "image" }
 
     - name: "pages"
