@@ -6,12 +6,13 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import Colours from "../utils/colours";
 import SponsorsRoll from "../components/sponsorsRoll";
+import LogoSVG from "../utils/logoSVG";
 
 export const IndexPageTemplate = ({ image, title, subheading, mainpitch, description, intro, hideImage }) => {
     return (
         <div>
             <div
-                className="full-width-image margin-top-0"
+                className="full-width-image full-width-image-fix"
                 style={{
                     backgroundImage: hideImage ? "" : `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
                     backgroundColor: Colours.blue,
@@ -22,13 +23,13 @@ export const IndexPageTemplate = ({ image, title, subheading, mainpitch, descrip
                 <div
                     style={{
                         display: "flex",
-                        height: "150px",
                         lineHeight: "1",
                         justifyContent: "space-around",
                         alignItems: "left",
                         flexDirection: "column"
                     }}
                 >
+                    <LogoSVG />
                     <h1
                         className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-text-centered"
                         style={{

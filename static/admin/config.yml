@@ -46,7 +46,8 @@ collections:
           - { label: "type", name: "type", widget: "hidden", default: "post" }
 
     - name: "sponsors"
-      label: "sponsor"
+      label: "Sponsors"
+      label_singular: "Sponsor"
       folder: "src/pages/sponsors"
       create: true
       slug: "{{slug}}"

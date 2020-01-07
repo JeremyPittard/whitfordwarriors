@@ -1,7 +1,14 @@
 .overflow-fix {
     overflow: hidden;
+    padding-top: 52px;
 
     @media (min-width: 1024px) {
         overflow: unset;
     }
+}
+
+.full-width-image-fix {
+    height: none;
+    height: unset;
+    padding: 20px 0;
 }
