@@ -14,7 +14,7 @@ export const BlogRoll = props => {
                     // let delay = i < 4 ? `${i}00` : `${i - 3}00`;
                     return (
                         <>
-                            <div className="is-parent column is-4" key={post.id}>
+                            <div className="is-parent column is-4" key={`b-${index}`}>
                                 <Link to={post.fields.slug} className="tile c-tile is-child box">
                                     <article>
                                         <PreviewCompatibleImage

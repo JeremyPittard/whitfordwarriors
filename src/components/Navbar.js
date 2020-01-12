@@ -36,7 +36,7 @@ const Navbar = class extends React.Component {
                 <div className="container">
                     <div className="navbar-brand">
                         <AniLink cover direction="right" bg="#3e4189" hex="#3e4189" to="/" className="navbar-item logo" title="Logo">
-                            <h3 class="has-text-weight-bold is-size-3 blue-text">WAFC</h3>
+                            <h3 className="has-text-weight-bold is-size-3 blue-text">WW</h3>
                         </AniLink>
                         {/* Hamburger menu */}
                         <div className={`navbar-burger burger ${this.state.navBarActiveClass}`} data-target="navMenu" onClick={() => this.toggleHamburger()}>
@@ -50,7 +50,7 @@ const Navbar = class extends React.Component {
                             <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/news">
                                 News
                             </AniLink>
-                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/">
+                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/events">
                                 Events
                             </AniLink>
                             <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/">
@@ -63,7 +63,7 @@ const Navbar = class extends React.Component {
                             <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/contact">
                                 Contact
                             </AniLink>
-                            <a className="navbar-item blue-text" href="https://clubshop.net.au/whitfordwarriors/" target="_blank" rel="noopener norel">
+                            <a className="navbar-item blue-text" href="https://clubshop.net.au/whitfordwarriors/" target="_blank" rel="noopener noreferrer">
                                 Merch
                             </a>
                             <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">

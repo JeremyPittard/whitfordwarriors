@@ -60,7 +60,7 @@ export const IndexPageTemplate = ({ image, title, subheading, mainpitch, descrip
                                 <div className="content">
                                     <div className="content">
                                         <div className="tile">
-                                            <h1 className="title blue-text">{mainpitch.title}</h1>
+                                            <h1 className="title blue-text ">{mainpitch.title}</h1>
                                         </div>
                                         <div className="tile">
                                             <h3 className="subtitle blue-text">{mainpitch.description}</h3>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-export const NewsRoll = props => {
+export const EventsRoll = props => {
     const { data } = props;
     const { edges: posts } = data.allMarkdownRemark;
     return (
@@ -10,7 +10,7 @@ export const NewsRoll = props => {
             {posts &&
                 posts.map(({ node: post }, index) => (
                     <>
-                        <div className="is-parent column is-4" key={`news-${index}`}>
+                        <div className="is-parent column is-4" key={`event-${index}`}>
                             <Link to={post.fields.slug} className="tile c-tile is-child box ">
                                 <article>
                                     <PreviewCompatibleImage
@@ -21,7 +21,7 @@ export const NewsRoll = props => {
                                         }}
                                     />
                                     <h3>{post.frontmatter.title}</h3>
-                                    <p className="subtitle blue-text is-size-7">published on: {post.frontmatter.date}</p>
+                                    <p className="subtitle blue-text is-size-7">Event on: {post.frontmatter.eventDate}</p>
                                 </article>
                             </Link>
                         </div>
@@ -33,8 +33,8 @@ export const NewsRoll = props => {
 
 const Posts = () => {
     const data = useStaticQuery(graphql`
-        query NewsRollQuery {
-            allMarkdownRemark(limit: 10, sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { templateKey: { eq: "news-post" } } }) {
+        query EventsRollQuery {
+            allMarkdownRemark(limit: 10, sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { templateKey: { eq: "event-post" } } }) {
                 edges {
                     node {
                         excerpt(pruneLength: 400)
@@ -46,6 +46,7 @@ const Posts = () => {
                             title
                             templateKey
                             date(formatString: "MMMM DD, YYYY")
+                            eventDate(formatString: "MMMM DD, YYYY")
                             featuredpost
                             featuredimage {
                                 childImageSharp {
@@ -60,6 +61,6 @@ const Posts = () => {
             }
         }
     `);
-    return <NewsRoll data={data} />;
+    return <EventsRoll data={data} />;
 };
 export default Posts;

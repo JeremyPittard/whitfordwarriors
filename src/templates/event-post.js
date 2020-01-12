@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
 import Content, { HTMLContent } from "../components/Content";
 
 export const eventsPostTemplate = ({ content, contentComponent, description, title, helmet }) => {
