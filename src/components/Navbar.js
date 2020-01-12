@@ -53,25 +53,10 @@ const Navbar = class extends React.Component {
                             <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/">
                                 Events
                             </AniLink>
-                            <div className="navbar-item has-dropdown is-hoverable">
-                                <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/">
-                                    Honour Boards
-                                </AniLink>
-                                <div className="navbar-dropdown">
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                        Policiy 2
-                                    </AniLink>
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                        Policiy 3
-                                    </AniLink>
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                        Policiy 4
-                                    </AniLink>
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/">
-                                        Policiy 5
-                                    </AniLink>
-                                </div>
-                            </div>
+                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/">
+                                Honour Boards
+                            </AniLink>
+
                             <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/sponsors">
                                 Sponsors
                             </AniLink>
@@ -81,25 +66,9 @@ const Navbar = class extends React.Component {
                             <a className="navbar-item blue-text" href="https://clubshop.net.au/whitfordwarriors/" target="_blank" rel="noopener norel">
                                 Merch
                             </a>
-                            <div className="navbar-item has-dropdown is-hoverable">
-                                <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                    Policies
-                                </AniLink>
-                                <div className="navbar-dropdown">
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                        Policiy 2
-                                    </AniLink>
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                        Policiy 3
-                                    </AniLink>
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                        Policiy 4
-                                    </AniLink>
-                                    <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
-                                        Policiy 5
-                                    </AniLink>
-                                </div>
-                            </div>
+                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
+                                Policies
+                            </AniLink>
                         </div>
                     </div>
                 </div>
