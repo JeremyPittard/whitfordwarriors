@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import Colours from "../utils/colours";
@@ -65,11 +64,6 @@ export const IndexPageTemplate = ({ image, title, subheading, mainpitch, descrip
                                         </div>
                                         <div className="tile">
                                             <h3 className="subtitle blue-text">{mainpitch.description}</h3>
-                                        </div>
-                                    </div>
-                                    <div className="columns">
-                                        <div className="column is-12">
-                                            <p>{description}</p>
                                         </div>
                                     </div>
                                     <Features gridItems={intro.blurbs} />

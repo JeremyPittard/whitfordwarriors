@@ -80,7 +80,7 @@ collections:
       slug: "{{slug}}"
       fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Document", name: "document", widget: "image" }
+          - { label: "Document", name: "document", widget: "file" }
 
     - name: "pages"
       label: "Pages"
