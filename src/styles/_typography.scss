@@ -21,3 +21,9 @@ a {
 .blue-text {
     color: $blue-text !important;
 }
+
+.drop-cap::first-letter {
+    font-size: 4.5rem;
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+}

@@ -24,19 +24,20 @@ export const NewsPostTemplate = ({ content, contentComponent, description, title
                 >
                     {title}
                 </h1>
-                <p style={{ color: Colours.white }}>{description}</p>
             </div>
             <section className="section">
-                <div className="container">
-                    <div className="column is-10 is-offset-1">
+                <div className="columns">
+                    <div className="column is-4 is-offset-2">
                         <PreviewCompatibleImage imageInfo={{ image: featuredimage, alt: `featured image thumbnail for post ${title}` }} />
                     </div>
-
-                    <div className="content">
-                        <div className="column is-10 is-offset-1">
-                            <p>published on: {date}</p>
-                            <PostContent content={content} />
-                        </div>
+                    <div className="column is-4">
+                        <p>
+                            <em>published on: {date}</em>
+                        </p>
+                        <p>
+                            <em>{description}</em>
+                        </p>
+                        <PostContent content={content} className={`drop-cap`} />
                     </div>
                 </div>
             </section>
@@ -100,7 +101,7 @@ export const pageQuery = graphql`
                 type
                 featuredimage {
                     childImageSharp {
-                        fluid(maxWidth: 1600, maxHeight: 400, quality: 90, cropFocus: ATTENTION) {
+                        fluid(maxWidth: 600, maxHeight: 450, quality: 80, cropFocus: ATTENTION) {
                             ...GatsbyImageSharpFluid
                         }
                     }
