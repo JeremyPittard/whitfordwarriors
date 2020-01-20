@@ -36,7 +36,7 @@ const Navbar = class extends React.Component {
                 <div className="container">
                     <div className="navbar-brand">
                         <AniLink cover direction="right" bg="#3e4189" hex="#3e4189" to="/" className="navbar-item logo" title="Logo">
-                            <h3 className="has-text-weight-bold is-size-3 blue-text">WW</h3>
+                            <h3 className="has-text-weight-bold is-size-2 blue-text">WW</h3>
                         </AniLink>
                         {/* Hamburger menu */}
                         <div className={`navbar-burger burger ${this.state.navBarActiveClass}`} data-target="navMenu" onClick={() => this.toggleHamburger()}>
