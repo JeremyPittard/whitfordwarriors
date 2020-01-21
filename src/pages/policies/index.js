@@ -1,6 +1,7 @@
 import React from "react";
+import Colours from "../../utils/colours";
 
-import policyRoll from "../../components/policyRoll";
+import PolicyRoll from "../../components/policyRoll";
 
 export default class BlogIndexPage extends React.Component {
     render() {
@@ -15,8 +16,7 @@ export default class BlogIndexPage extends React.Component {
                     <h1
                         className="has-text-weight-bold is-size-1"
                         style={{
-                            boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-                            backgroundColor: "#f40",
+                            backgroundColor: Colours.blue,
                             color: "white",
                             padding: "1rem"
                         }}
@@ -27,7 +27,7 @@ export default class BlogIndexPage extends React.Component {
                 <section className="section">
                     <div className="container">
                         <div className="content">
-                            <policyRoll />
+                            <PolicyRoll />
                         </div>
                     </div>
                 </section>

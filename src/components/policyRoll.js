@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import document from "../../static/img/document.svg";
 
-export const policyRoll = props => {
+export const PolicyRoll = props => {
     const { data } = props;
     const { edges: posts } = data.allMarkdownRemark;
 
@@ -9,13 +10,11 @@ export const policyRoll = props => {
         <div className="columns is-multiline">
             {posts &&
                 posts.map(({ node: post }, index) => {
-                    // let i = index + 1;
-                    // let delay = i < 4 ? `${i}00` : `${i - 3}00`;
-
                     return (
                         <>
                             <div className="is-parent column is-4" key={post.id}>
-                                <a href={post.frontmatter.document} className="sponsor is-child" target="_blank" rel="noopener noreferrer">
+                                <a href={post.frontmatter.document.absolutePath} className="sponsor is-child" target="_blank" rel="noopener noreferrer" download>
+                                    <img src={document} alt={post.frontmatter.title} />
                                     <article>{post.frontmatter.title}</article>
                                 </a>
                             </div>
@@ -29,7 +28,7 @@ export const policyRoll = props => {
 const Posts = () => {
     const data = useStaticQuery(graphql`
         query policyRollQuery {
-            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }, filter: { frontmatter: { isMajor: { eq: true } } }) {
+            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }, filter: { frontmatter: { templateKey: { eq: "policy" } } }) {
                 edges {
                     node {
                         excerpt(pruneLength: 400)
@@ -40,7 +39,7 @@ const Posts = () => {
                         frontmatter {
                             title
                             document {
-                                relativePath
+                                absolutePath
                             }
                         }
                     }
@@ -48,6 +47,6 @@ const Posts = () => {
             }
         }
     `);
-    return <policyRoll data={data} />;
+    return <PolicyRoll data={data} />;
 };
 export default Posts;
