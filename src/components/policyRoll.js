@@ -10,11 +10,10 @@ export const PolicyRoll = props => {
         <div className="columns is-multiline policy-roll">
             {posts &&
                 posts.map(({ node: post }, index) => {
-                    console.log(post.frontmatter.document, "document " + index);
                     return (
                         <>
                             <div className="is-parent column is-4 is-flex justify-center" key={post.id}>
-                                <a href={post.frontmatter.document} className="sponsor is-child blue-text policy-card" target="_blank" rel="noopener noreferrer" download>
+                                <a href={post.frontmatter.document.absolutePath} className="sponsor is-child blue-text policy-card" target="_blank" rel="noopener noreferrer" download>
                                     <img src={document} alt={post.frontmatter.title} />
                                     <article>
                                         {post.frontmatter.title} {index}

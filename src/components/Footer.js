@@ -44,7 +44,6 @@ const Footer = class extends React.Component {
                                         <img src={instagram} alt="Instagram" style={{ width: "1em", height: "1em" }} />
                                     </a>
                                 </div>
-                                <br />
                                 <ul>
                                     <li>
                                         <a href="" className="white-text" target="_blank">
@@ -57,7 +56,7 @@ const Footer = class extends React.Component {
                                         </a>
                                     </li>
                                     <li>
-                                        site made in gatsby.js by &nbsp;
+                                        site by &nbsp;
                                         <a href="https://jpittard.net" className="white-text" target="_blank">
                                             this guy.
                                         </a>
