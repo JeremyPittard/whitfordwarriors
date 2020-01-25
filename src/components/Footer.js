@@ -33,7 +33,7 @@ const Footer = class extends React.Component {
                                 </section>
                             </div>
                             <div className="column is-4 has-text-right">
-                                <div className="social">
+                                <div className="social has-text-right">
                                     <a title="facebook" href="https://www.facebook.com/whitfordafc">
                                         <img className="fas fa-lg" src={facebook} style={{ width: "1em", height: "1em" }} />
                                     </a>
