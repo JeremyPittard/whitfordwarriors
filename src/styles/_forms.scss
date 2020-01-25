@@ -1,0 +1,36 @@
+form {
+    input {
+        background-color: transparent;
+        padding: 10px 20px;
+        color: $white;
+        outline: none;
+        border: 1px solid $white;
+    }
+
+    .input-wrapper {
+        display: inline;
+        label {
+            display: block;
+            transition: all 200ms ease-in-out;
+            background-color: $blue;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+
+    .submit {
+        cursor: pointer;
+
+        transition: all 200ms linear;
+
+        &:hover,
+        &:focus {
+            background-color: $white;
+            color: $blue;
+        }
+    }
+
+    .name {
+        display: none;
+    }
+}

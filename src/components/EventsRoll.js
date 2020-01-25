@@ -1,6 +1,8 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Colours from "../utils/colours";
 
 export const EventsRoll = props => {
     const { data } = props;
@@ -11,7 +13,7 @@ export const EventsRoll = props => {
                 posts.map(({ node: post }, index) => (
                     <>
                         <div className="is-parent column is-4" key={`event-${index}`}>
-                            <Link to={post.fields.slug} className="tile c-tile is-child box ">
+                            <AniLink direction="down" duration={0.7} cover bg={Colours.blue} to={post.fields.slug} className="tile c-tile is-child box ">
                                 <article>
                                     <PreviewCompatibleImage
                                         imageInfo={{
@@ -23,7 +25,7 @@ export const EventsRoll = props => {
                                     <h3>{post.frontmatter.title}</h3>
                                     <p className="subtitle blue-text is-size-7">Event on: {post.frontmatter.eventDate}</p>
                                 </article>
-                            </Link>
+                            </AniLink>
                         </div>
                     </>
                 ))}

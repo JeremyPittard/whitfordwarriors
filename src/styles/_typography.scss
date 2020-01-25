@@ -22,8 +22,21 @@ a {
     color: $blue-text !important;
 }
 
+.white-text {
+    color: $white !important;
+}
+
 .drop-cap::first-letter {
     font-size: 4.5rem;
     font-family: "Raleway", sans-serif;
     text-transform: capitalize;
+}
+
+.justify-center {
+    text-align: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none !important;
 }

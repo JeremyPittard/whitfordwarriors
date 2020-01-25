@@ -1,6 +1,5 @@
 ---
 templateKey: policy
 title: Privacy Policy
-documentLink: /img/privacy-policy.pdf
+document: /img/privacy-policy.pdf
 ---
-

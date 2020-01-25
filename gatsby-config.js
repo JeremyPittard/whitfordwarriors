@@ -1,13 +1,19 @@
 module.exports = {
     siteMetadata: {
-        title: "Whitford Amatuer Football Club",
-        description: "The Whitford Warriors are an amateur football club based in the Padbury, in the Northern Suburbs of Perth. "
+        title: "Whitford Warriors Football and Netball Club",
+        description: "The Whitford Warriors are an amateur football and netball club based in Padbury, in the Northern Suburbs of Perth. "
     },
     plugins: [
         {
             resolve: "gatsby-plugin-transition-link",
             options: {
                 layout: require.resolve(`./src/components/Layout.js`)
+            }
+        },
+        {
+            resolve: "gatsby-plugin-mailchimp",
+            options: {
+                endpoint: "https://whitfordafc.us12.list-manage.com/subscribe/post?u=541768944af1bffb0bbb9190e&amp;id=86af9a9411"
             }
         },
         "gatsby-plugin-react-helmet",

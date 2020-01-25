@@ -1,5 +1,6 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Colours from "../utils/colours";
 
 const Navbar = class extends React.Component {
     constructor(props) {
@@ -35,7 +36,7 @@ const Navbar = class extends React.Component {
             <nav className="navbar is-fixed-top" role="navigation" aria-label="main-navigation">
                 <div className="container">
                     <div className="navbar-brand">
-                        <AniLink cover direction="right" bg="#3e4189" hex="#3e4189" to="/" className="navbar-item logo" title="Logo">
+                        <AniLink cover direction="down" duration={0.7} bg={Colours.blue} to="/" className="navbar-item logo" title="Logo">
                             <h3 className="has-text-weight-bold is-size-2 blue-text">WW</h3>
                         </AniLink>
                         {/* Hamburger menu */}
@@ -47,27 +48,30 @@ const Navbar = class extends React.Component {
                     </div>
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
                         <div className="navbar-start has-text-centered">
-                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/news">
+                            <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} duration={0.7} bg={Colours.blue} to="/news">
                                 News
                             </AniLink>
-                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/events">
+                            <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} bg={Colours.blue} to="/events">
                                 Events
                             </AniLink>
-                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/">
+                            <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} bg={Colours.blue} to="/">
                                 Honour Boards
                             </AniLink>
 
-                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/sponsors">
+                            <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} bg={Colours.blue} to="/sponsors">
                                 Sponsors
                             </AniLink>
-                            <AniLink className="navbar-item blue-text" cover direction="right" bg="#3e4189" to="/contact">
+                            <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} bg={Colours.blue} to="/contact">
                                 Contact
                             </AniLink>
                             <a className="navbar-item blue-text" href="https://clubshop.net.au/whitfordwarriors/" target="_blank" rel="noopener noreferrer">
                                 Merch
                             </a>
-                            <AniLink className="navbar-item" cover direction="right" bg="#3e4189" to="/policies">
+                            <AniLink className="navbar-item" cover direction="down" duration={0.7} bg={Colours.blue} to="/policies">
                                 Policies
+                            </AniLink>
+                            <AniLink className="navbar-item" cover direction="down" duration={0.7} bg={Colours.blue} to="/policies">
+                                Women's Footy
                             </AniLink>
                         </div>
                     </div>

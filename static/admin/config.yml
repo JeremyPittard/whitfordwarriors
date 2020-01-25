@@ -81,7 +81,7 @@ collections:
       fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "policy" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Document", name: "documentLink", widget: "file" }
+          - { label: "Document", name: "document", widget: "file" }
 
     - name: "pages"
       label: "Pages"
