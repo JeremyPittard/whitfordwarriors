@@ -1,6 +1,6 @@
 ---
 templateKey: policy
-title: Terms & Conditions
+title: Terms and Conditions
 documentLink: /img/terms-conditions.pdf
 ---
 
