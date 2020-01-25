@@ -1,7 +1,7 @@
 import React from "react";
-import Colours from "../../utils/colours";
 
-import FullSponsorsRoll from "../../components/fullSponsorsRoll";
+import EventsRoll from "../../components/EventsRoll";
+import Colours from "../../utils/colours";
 
 export default class BlogIndexPage extends React.Component {
     render() {
@@ -10,24 +10,24 @@ export default class BlogIndexPage extends React.Component {
                 <div
                     className="full-width-image-container margin-top-0 filtered"
                     style={{
-                        backgroundImage: `url('/img/sponsors.jpg')`
+                        backgroundImage: `url('/img/honour.jpg')`
                     }}
                 >
                     <h1
                         className="has-text-weight-bold is-size-1"
                         style={{
                             backgroundColor: Colours.blue,
-                            color: Colours.white,
+                            color: "white",
                             padding: "1rem"
                         }}
                     >
-                        Latest Stories
+                        Honour Boards
                     </h1>
                 </div>
                 <section className="section">
                     <div className="container">
                         <div className="content">
-                            <FullSponsorsRoll />
+                            <EventsRoll />
                         </div>
                     </div>
                 </section>

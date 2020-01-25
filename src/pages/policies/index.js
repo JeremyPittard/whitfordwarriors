@@ -8,9 +8,9 @@ export default class BlogIndexPage extends React.Component {
         return (
             <>
                 <div
-                    className="full-width-image-container margin-top-0"
+                    className="full-width-image-container margin-top-0 filtered"
                     style={{
-                        backgroundImage: `url('/img/blog-index.jpg')`
+                        backgroundImage: `url('/img/policies.jpg')`
                     }}
                 >
                     <h1
@@ -21,7 +21,7 @@ export default class BlogIndexPage extends React.Component {
                             padding: "1rem"
                         }}
                     >
-                        Latest Stories
+                        Club Policies
                     </h1>
                 </div>
                 <section className="section">
