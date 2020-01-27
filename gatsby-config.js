@@ -5,6 +5,12 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: "gatsby-plugin-react-leaflet",
+            options: {
+                linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
+            }
+        },
+        {
             resolve: "gatsby-plugin-transition-link",
             options: {
                 layout: require.resolve(`./src/components/Layout.js`)
