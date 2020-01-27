@@ -12,10 +12,7 @@ export default class Index extends React.Component {
         return (
             <>
                 <section className="section">
-                    <div className="columns is-6">
-                        {" "}
-                        <LeafletMap position={[-31.804494, 115.756956]} zoom={8} markerText={"Hello, this is a marker"} />
-                    </div>
+                    <div className="columns is-6">{typeof window !== "undefined" && <LeafletMap position={[-31.804494, 115.756956]} zoom={16} markerText={"Hello, this is a marker"} />}</div>
                 </section>
             </>
         );
