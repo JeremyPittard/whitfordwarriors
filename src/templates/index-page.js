@@ -6,7 +6,7 @@ import BlogRoll from "../components/BlogRoll";
 import Colours from "../utils/colours";
 import SponsorsRoll from "../components/sponsorsRoll";
 import LogoSVG from "../utils/logoSVG";
-
+import LeafletMap from "../components/LeafletMap";
 export const IndexPageTemplate = ({ image, title, subheading, mainpitch, description, intro, hideImage }) => {
     return (
         <div>
@@ -80,6 +80,11 @@ export const IndexPageTemplate = ({ image, title, subheading, mainpitch, descrip
                         </div>
                     </div>
                 </div>
+            </section>
+            <section>
+                {typeof window !== "undefined" && (
+                    <LeafletMap position={[-31.804494, 115.756956]} zoom={16} markerText={"Whitford Warriors Football and Netball Club is located on the corner of Forrest road and Marmoin Avenue in Padbury "} />
+                )}
             </section>
         </div>
     );

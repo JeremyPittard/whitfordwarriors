@@ -11,8 +11,10 @@ export default class Index extends React.Component {
     render() {
         return (
             <>
-                <section className="section">
-                    <div className="columns is-6">{typeof window !== "undefined" && <LeafletMap position={[-31.804494, 115.756956]} zoom={16} markerText={"Hello, this is a marker"} />}</div>
+                <section className="section map-section">
+                    <div className="map-container">
+                        <LeafletMap position={[-31.804494, 115.756956]} zoom={16} markerText={"Whitford Warriors Football and Netball Club is located on the corner of Forrest road and Marmoin Avenue in Padbury "} />
+                    </div>
                 </section>
             </>
         );

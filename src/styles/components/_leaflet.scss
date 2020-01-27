@@ -2,3 +2,21 @@
     width: 100%;
     height: 400px;
 }
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    font-family: "Montserrat", sans-serif;
+    line-height: 2;
+    letter-spacing: 125%;
+    color: $white;
+    background: $blue;
+}
+
+.map-container {
+    width: 50%;
+    height: 100%;
+}
+
+.map-section {
+    padding: 0 !important;
+}
