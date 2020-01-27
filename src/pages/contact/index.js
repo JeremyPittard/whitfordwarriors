@@ -13,7 +13,9 @@ export default class Index extends React.Component {
             <>
                 <section className="section map-section">
                     <div className="map-container">
-                        <LeafletMap position={[-31.804494, 115.756956]} zoom={16} markerText={"Whitford Warriors Football and Netball Club is located on the corner of Forrest road and Marmoin Avenue in Padbury "} />
+                        {typeof window !== "undefined" && (
+                            <LeafletMap position={[-31.804494, 115.756956]} zoom={16} markerText={"Whitford Warriors Football and Netball Club is located on the corner of Forrest road and Marmoin Avenue in Padbury "} />
+                        )}
                     </div>
                 </section>
             </>
