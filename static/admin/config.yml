@@ -105,8 +105,8 @@ collections:
                 - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
                 - { label: "Title", name: "title", widget: "string" }
                 - { label: "Body", name: "body", widget: "markdown" }
-    - name: "Contacts"
-      label: "contacts"
+    - name: "contacts"
+      label: "Contacts"
       label_singular: "Contact"
       folder: "src/pages/contact"
       create: true
@@ -116,4 +116,4 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
-          - { label: "Phone Number", name: "number", widget: "string" }
+          - { label: "Phone Number", name: "number", widget: "string", required: false }
