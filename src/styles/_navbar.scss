@@ -21,6 +21,10 @@
     &.is-active {
         transform: rotate(270deg);
     }
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
 }
 
 .goalpost {

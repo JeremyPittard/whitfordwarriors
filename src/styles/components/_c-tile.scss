@@ -32,4 +32,8 @@
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.6) !important; //override bulma default
         transform: translateY(-3px);
     }
+
+    &.honour-link {
+        text-align: center;
+    }
 }

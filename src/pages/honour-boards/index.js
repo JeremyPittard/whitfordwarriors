@@ -1,6 +1,6 @@
 import React from "react";
 
-import EventsRoll from "../../components/EventsRoll";
+import HonourRoll from "../../components/HonourRoll";
 import Colours from "../../utils/colours";
 
 export default class BlogIndexPage extends React.Component {
@@ -27,7 +27,7 @@ export default class BlogIndexPage extends React.Component {
                 <section className="section">
                     <div className="container">
                         <div className="content">
-                            <EventsRoll />
+                            <HonourRoll />
                         </div>
                     </div>
                 </section>
