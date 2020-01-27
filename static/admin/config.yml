@@ -82,6 +82,18 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "policy" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Document", name: "document", widget: "file" }
+    - name: "contacts"
+      label: "Contacts"
+      label_singular: "Contact"
+      folder: "src/pages/contact"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-post" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone Number", name: "number", widget: "string", required: false }
 
     - name: "pages"
       label: "Pages"
@@ -105,15 +117,3 @@ collections:
                 - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
                 - { label: "Title", name: "title", widget: "string" }
                 - { label: "Body", name: "body", widget: "markdown" }
-    - name: "contacts"
-      label: "Contacts"
-      label_singular: "Contact"
-      folder: "src/pages/contact"
-      create: true
-      slug: "{{slug}}"
-      fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-post" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Phone Number", name: "number", widget: "string", required: false }
