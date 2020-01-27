@@ -3,15 +3,15 @@ import { graphql, useStaticQuery } from "gatsby";
 
 export const ContactList = props => {
     const { data } = props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const { edges: contacts } = data.allMarkdownRemark;
     return (
         <div className="columns is-multiline">
-            {posts &&
-                posts.map(({ node: post }, index) => (
+            {contacts &&
+                contacts.map(({ node: contact }, index) => (
                     <>
                         <div className="is-parent column is-4" key={`contact-${index}`}>
                             <article>
-                                <h3>{post.frontmatter.title}</h3>
+                                <h3>{contact.frontmatter.title}</h3>
                             </article>
                         </div>
                     </>
@@ -20,19 +20,23 @@ export const ContactList = props => {
     );
 };
 
-const Posts = () => {
+const Contacts = () => {
     const data = useStaticQuery(graphql`
         query ContactListQuery {
             allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "contact-post" } } }) {
                 edges {
                     node {
+                        excerpt(pruneLength: 400)
                         id
+                        fields {
+                            slug
+                        }
                         frontmatter {
                             title
-                            name
-                            number
-                            email
                             templateKey
+                            name
+                            email
+                            number
                         }
                     }
                 }
@@ -41,4 +45,4 @@ const Posts = () => {
     `);
     return <ContactList data={data} />;
 };
-export default Posts;
+export default Contacts;

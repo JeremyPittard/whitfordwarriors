@@ -1,7 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby-link";
 import LeafletMap from "../../components/LeafletMap";
-import { ContactList } from "../../components/ContactRoll";
 
 export default class Index extends React.Component {
     constructor(props) {
@@ -18,9 +17,7 @@ export default class Index extends React.Component {
                             <LeafletMap position={[-31.804494, 115.756956]} zoom={16} markerText={"Whitford Warriors Football and Netball Club is located on the corner of Forrest road and Marmoin Avenue in Padbury "} />
                         )}
                     </div>
-                    <div>
-                        <ContactList />
-                    </div>
+                    <div></div>
                 </section>
             </>
         );
