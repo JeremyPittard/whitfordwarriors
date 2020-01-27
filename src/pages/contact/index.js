@@ -11,9 +11,7 @@ export default class Index extends React.Component {
     render() {
         return (
             <>
-                <section className="section">
-                    <LeafletMap />
-                </section>
+                <section className="section">{typeof window !== "undefined" && <LeafletMap position={[-31.804494, 115.756956]} zoom={8} markerText={"Hello, this is a marker"} />}</section>
             </>
         );
     }
