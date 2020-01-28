@@ -34,3 +34,28 @@ form {
         display: none;
     }
 }
+
+.womens-footy-form {
+    input {
+        color: $blue-text;
+        border: 1px solid $blue;
+    }
+
+    .input-wrapper {
+        display: inline;
+        label {
+            display: block;
+            background-color: transparent;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+
+    .submit {
+        &:hover,
+        &:focus {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}

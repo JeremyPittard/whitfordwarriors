@@ -71,7 +71,7 @@ const Navbar = class extends React.Component {
                             <AniLink className="navbar-item" cover direction="down" duration={0.7} bg={Colours.blue} to="/policies">
                                 Policies
                             </AniLink>
-                            <AniLink className="navbar-item" cover direction="down" duration={0.7} bg={Colours.blue} to="/policies">
+                            <AniLink className="navbar-item" cover direction="down" duration={0.7} bg={Colours.blue} to="/womens-football">
                                 Women's Footy
                             </AniLink>
                         </div>

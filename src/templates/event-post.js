@@ -13,32 +13,21 @@ export const EventPostTemplate = ({ content, contentComponent, description, titl
     return (
         <>
             {helmet || ""}
-
-            <div className="full-width-image-container margin-top-0 article-header">
-                <h1
-                    className="has-text-weight-bold is-size-1"
-                    style={{
-                        backgroundColor: Colours.blue,
-                        padding: "1rem"
-                    }}
-                >
-                    {title}
-                </h1>
-            </div>
-            <section className="section">
+            <section className="section article-header">
                 <div className="columns">
                     <div className="column is-4 is-offset-2">
                         <PreviewCompatibleImage imageInfo={{ image: featuredimage, alt: `featured image thumbnail for post ${title}` }} />
                     </div>
-                    <div className="column is-4">
-                        <p>
-                            <em>Event on: {eventDate}</em>
-                        </p>
-                        <p>
-                            <em>{description}</em>
-                        </p>
-                        <PostContent content={content} className={`drop-cap`} />
+                    <div className="columnm is-4 article-title-container">
+                        <h1 className="article-title is-size-1">{title}</h1>
+                        <em>Event on: {eventDate}</em>
+                        <em>{description}</em>
                     </div>
+                </div>
+            </section>
+            <section className="columns">
+                <div className="column is-5 is-offset-3">
+                    <PostContent content={content} className={`drop-cap`} />
                 </div>
             </section>
         </>

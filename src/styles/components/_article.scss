@@ -1,6 +1,19 @@
 .article-header {
-    flex-direction: column;
     color: $white;
     background-color: $blue;
     margin-bottom: 0;
+}
+
+.article-title {
+    text-transform: capitalize;
+}
+.article-title-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 1024px) {
+        margin-left: 2rem;
+    }
 }

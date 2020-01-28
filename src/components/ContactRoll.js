@@ -5,38 +5,45 @@ export const ContactList = props => {
     const { data } = props;
     const { edges: contacts } = data.allMarkdownRemark;
     return (
-        <div className="columns is-multiline">
-            {contacts &&
-                contacts.map(({ node: contact }, index) => (
-                    <>
-                        <div className="is-parent column is-4" key={`contact-${index}`}>
-                            <article>
-                                <h3>{contact.frontmatter.title}</h3>
-                            </article>
-                        </div>
-                    </>
-                ))}
-        </div>
+        <section className={"map-section__contacts-list"}>
+            <h1 className={"is-size-1 has-text-centered"}>Club Contacts</h1>
+            <div className="container">
+                <div className="columns is-parent is-multiline">
+                    {contacts &&
+                        contacts.map(({ node: contact }, index) => (
+                            <>
+                                <div className={"column is-4"}>
+                                    <ul key={`contact-${index}`}>
+                                        <li className={"map-section__contact"}>
+                                            <h3 className={"is-size-5"}>
+                                                <strong>{contact.frontmatter.title}:</strong> {contact.frontmatter.name}
+                                            </h3>
+                                        </li>
+                                        {contact.frontmatter.number && <li>Phone: {contact.frontmatter.number}</li>}
+                                        {contact.frontmatter.email && <li>Email: {contact.frontmatter.email}</li>}
+                                    </ul>
+                                </div>
+                            </>
+                        ))}
+                </div>
+            </div>
+        </section>
     );
 };
 
 const Contacts = () => {
     const data = useStaticQuery(graphql`
-        query ContactListQuery {
+        {
             allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "contact-post" } } }) {
                 edges {
                     node {
-                        excerpt(pruneLength: 400)
                         id
-                        fields {
-                            slug
-                        }
                         frontmatter {
                             title
-                            templateKey
                             name
-                            email
                             number
+                            email
+                            templateKey
                         }
                     }
                 }
