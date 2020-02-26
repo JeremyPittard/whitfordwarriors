@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Content, { HTMLContent } from "../components/Content";
 
-export const ContactPostTemplate = ({ content, contentComponent, description, tags, title, helmet }) => {
+export const ContactPostTemplate = ({ content, contentComponent, description, title, helmet }) => {
     const PostContent = contentComponent || Content;
 
     return (
@@ -46,7 +46,6 @@ const ContactPost = ({ data }) => {
                         <meta name="description" content={`${post.frontmatter.description}`} />
                     </Helmet>
                 }
-                tags={post.frontmatter.tags}
                 title={post.frontmatter.title}
             />
         </>

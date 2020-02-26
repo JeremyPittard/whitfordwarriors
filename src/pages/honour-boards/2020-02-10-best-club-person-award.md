@@ -2,17 +2,18 @@
 templateKey: board-post
 title: Best Club Person Award
 description: >-
-  Introduced and first awarded in 1980 this award has been known as the Patrons
-  Best Club Person Award having been originally sponsored by the club Patrons.
+    Introduced and first awarded in 1980 this award has been known as the Patrons
+    Best Club Person Award having been originally sponsored by the club Patrons.
 
 
-  The Best Club Person is awarded to any member/s of the club that displays the
-  &quot;Warrior&quot; attitude and attributes.
+    The Best Club Person is awarded to any member/s of the club that displays the
+    &quot;Warrior&quot; attitude and attributes.
 
 
-  The award ceased after being last awarded in 2009 but re-established in 2016.
-featuredimage: /img/mstile-150x150.png
+    The award ceased after being last awarded in 2009 but re-established in 2016.
+featuredimage: /img/iconmonstr-trophy-6-240.png
 ---
+
 | Season | Name             | Season | Name                | Season | Name            |
 | ------ | ---------------- | ------ | ------------------- | ------ | --------------- |
 | 1980   | Ken Luplau       | 1997   | Adrian Mazzucchelli | 2012   | No Award        |

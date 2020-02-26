@@ -2,13 +2,12 @@
 templateKey: board-post
 title: Football Department Award
 description: >-
-  Awarded to a member of the clubs Football Department, being Coaches, Assistant
-  Coaches, Football Manager, Team Manager, Medical Staff, or Umpires that
-  contribute above and beyond what their role would normally include, to the on
-  field football operations.
-featuredimage: /img/logo.svg
----
-| **Season** | **Name**       | **Season** | **Name**      |
+    Awarded to a member of the clubs Football Department, being Coaches, Assistant
+    Coaches, Football Manager, Team Manager, Medical Staff, or Umpires that
+    contribute above and beyond what their role would normally include, to the on
+    field football operations.
+featuredimage: /img/iconmonstr-trophy-6-240.png
+---| **Season** | **Name**       | **Season** | **Name**      |
 | ---------- | -------------- | ---------- | ------------- |
 | 2007       | Damien Hancock | 2013       | Liz Dooley    |
 | 2008       | David Kennedy  | 2014       | John Bunn snr |

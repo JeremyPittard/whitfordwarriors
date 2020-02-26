@@ -1,25 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
 import Content, { HTMLContent } from "../components/Content";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-export const BoardTemplate = ({ content, contentComponent, description, title, helmet }) => {
+export const BoardTemplate = ({ content, contentComponent, description, title, helmet, featuredimage }) => {
     const PostContent = contentComponent || Content;
 
     return (
-        <section className="section">
+        <>
             {helmet || ""}
-            <div className="container content">
-                <div className="columns">
-                    <div className="column is-10 is-offset-1">
-                        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
-                        <p>{description}</p>
-                        <PostContent content={content} />
+            <section className="section article-header has-text-centered honour-board">
+                <div className="columnm is-12 article-title-container has-text-centered">
+                    <h1 className="article-title is-size-1 has-text-centered">{title}</h1>
+                    <em>{description}</em>
+                </div>
+            </section>
+            <section className="section">
+                <div className="container content">
+                    <div className="columns">
+                        <div className="column is-12">
+                            <PostContent content={content} />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 
@@ -66,6 +72,13 @@ export const pageQuery = graphql`
             id
             html
             frontmatter {
+                featuredimage {
+                    childImageSharp {
+                        fluid(maxWidth: 720, quality: 100) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
                 date(formatString: "MMMM DD, YYYY")
                 title
                 description

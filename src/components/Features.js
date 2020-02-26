@@ -8,7 +8,7 @@ const FeatureGrid = ({ gridItems }) => (
             // let i = index + 1;
             // let delay = i % 2 ? "0" : "500";
             return (
-                <div key={item.text} className="column is-6 ">
+                <div key={item.text} className="column is-6 blurb-section">
                     <section className="section">
                         <div className="has-text-centered">
                             <div

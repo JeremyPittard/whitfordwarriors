@@ -27,7 +27,7 @@ export const EventPostTemplate = ({ content, contentComponent, description, titl
             </section>
             <section className="columns">
                 <div className="column is-5 is-offset-3">
-                    <PostContent content={content} className={`drop-cap`} />
+                    <PostContent content={content} />
                 </div>
             </section>
         </>

@@ -27,6 +27,7 @@ collections:
           - { label: "Featured Image", name: "featuredimage", widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "type", name: "type", widget: "hidden", default: "post" }
+          - { label: "tags", name: "tages", widget: "hidden", default: "post" }
 
     - name: "events"
       label: "Events"

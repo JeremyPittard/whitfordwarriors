@@ -2,9 +2,8 @@
 templateKey: board-post
 title: John Salinovich Medal
 description: Best & Fairest Leage
-featuredimage: /img/logo.svg
----
-| **Season** | **Grade / Division** | **Ladder Position** | **Coach**              | **Best &amp; Fairest**           | **Runner Up\*\*** Best &amp; Fairest\*\* |
+featuredimage: /img/iconmonstr-trophy-6-240.png
+---| **Season** | **Grade / Division** | **Ladder Position** | **Coach**              | **Best &amp; Fairest**           | **Runner Up\*\*** Best &amp; Fairest\*\* |
 | ---------- | -------------------- | ------------------- | ---------------------- | -------------------------------- | ---------------------------------------- |
 | 1976       | F                    | Runner Up           | William (Bill) Russell | Phil Roberts                     | P Holst                                  |
 | 1977       | F                    | Runner Up           | William (Bill) Russell | Greg Matsen                      |                                          |

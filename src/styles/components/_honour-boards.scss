@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+
+    th {
+        background: $blue;
+        color: $white;
+        text-align: left;
+        border: none;
+        padding: 10px 20px;
+
+        strong {
+            color: $white;
+        }
+    }
+
+    td {
+        padding: 10px 20px;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba($blue, 0.1);
+    }
+}
+
+.honour-roll {
+    .gatsby-image-wrapper {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}

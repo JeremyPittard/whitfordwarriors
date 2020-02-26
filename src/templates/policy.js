@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Content, { HTMLContent } from "../components/Content";
 
-export const policyPostTemplate = ({ content, contentComponent, description, tags, title, helmet }) => {
+export const policyPostTemplate = ({ content, contentComponent, description, title, helmet }) => {
     const PostContent = contentComponent || Content;
 
     return (
@@ -46,7 +46,6 @@ const policyPost = ({ data }) => {
                         <meta name="description" content={`${post.frontmatter.description}`} />
                     </Helmet>
                 }
-                tags={post.frontmatter.tags}
                 title={post.frontmatter.title}
             />
         </>

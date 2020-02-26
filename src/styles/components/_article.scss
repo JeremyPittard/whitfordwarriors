@@ -1,7 +1,7 @@
 .article-header {
     color: $white;
     background-color: $blue;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .article-title {
@@ -15,5 +15,9 @@
 
     @media (min-width: 1024px) {
         margin-left: 2rem;
+    }
+
+    .honour-board & {
+        align-items: center;
     }
 }

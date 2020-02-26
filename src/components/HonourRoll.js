@@ -8,7 +8,7 @@ export const HonourRoll = props => {
     const { data } = props;
     const { edges: posts } = data.allMarkdownRemark;
     return (
-        <div className="columns is-multiline">
+        <div className="columns is-multiline honour-roll">
             {posts &&
                 posts.map(({ node: post }, index) => (
                     <>
@@ -35,7 +35,7 @@ export const HonourRoll = props => {
 const Posts = () => {
     const data = useStaticQuery(graphql`
         query HonourRollQuery {
-            allMarkdownRemark(limit: 10, sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { templateKey: { eq: "board-post" } } }) {
+            allMarkdownRemark(limit: 50, sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { templateKey: { eq: "board-post" } } }) {
                 edges {
                     node {
                         excerpt(pruneLength: 400)
@@ -48,10 +48,9 @@ const Posts = () => {
                             templateKey
                             date(formatString: "MMMM DD, YYYY")
                             eventDate(formatString: "MMMM DD, YYYY")
-                            featuredpost
                             featuredimage {
                                 childImageSharp {
-                                    fluid(maxWidth: 720, quality: 100) {
+                                    fluid(maxWidth: 200, quality: 100) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }

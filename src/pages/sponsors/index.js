@@ -21,7 +21,7 @@ export default class BlogIndexPage extends React.Component {
                             padding: "1rem"
                         }}
                     >
-                        Latest Stories
+                        Club Sponsors
                     </h1>
                 </div>
                 <section className="section">

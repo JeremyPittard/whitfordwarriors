@@ -2,9 +2,8 @@
 templateKey: board-post
 title: Games Played
 description: Games Played Milestones
-featuredimage: /img/logo.svg
----
-| **350 Games**       | **300 Games**       | **250 Games**         | **200 Games**   | **150 Games**      |
+featuredimage: /img/iconmonstr-trophy-6-240.png
+---| **350 Games**       | **300 Games**       | **250 Games**         | **200 Games**   | **150 Games**      |
 | ------------------- | ------------------- | --------------------- | --------------- | ------------------ |
 |                     |                     |                       |                 |                    |
 | Dave McDonald (365) | Ziggy Niemann (348) | Warren Nel (293)      | Gordon Lymn     | Peter Willington   |

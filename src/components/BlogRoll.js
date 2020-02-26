@@ -58,7 +58,6 @@ const Posts = () => {
                             templateKey
                             date(formatString: "Do MMM, YYYY")
                             eventDate(formatString: "Do MMM, YYYY")
-                            featuredpost
                             featuredimage {
                                 childImageSharp {
                                     fluid(maxWidth: 600, maxHeight: 450, quality: 80) {

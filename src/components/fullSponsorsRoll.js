@@ -15,8 +15,8 @@ export const FullSPonsors = props => {
                     console.log(post.frontmatter.logo);
                     return (
                         <>
-                            <div className="is-parent column is-12" key={post.id}>
-                                <a href={post.frontmatter.website} className="is-child" target="_blank" rel="noopener noreferrer">
+                            <div className="is-parent column is-4" key={post.id}>
+                                <a href={post.frontmatter.website} className="is-child sponsor" target="_blank" rel="noopener noreferrer">
                                     <article>
                                         <img src={post.frontmatter.logo.childImageSharp.fixed.src} alt={post.frontmatter.title} />
                                         <h3>{post.frontmatter.title}</h3>
