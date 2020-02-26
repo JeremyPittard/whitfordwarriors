@@ -27,12 +27,11 @@ description: >-
 intro:
   blurbs:
     - image: /img/group-1.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+      text: >-
+        During the season our Netball and Football teams play on Saturdays, with
+        the club open on Saturday nights and Thursdays after training.  We have
+        events all throughout the season ranging from Ladies Day to our Premier
+        event The Warriors Cup. 
     - image: /img/group.png
       text: >-
         As a club, we look to provide a great family atmosphere and be a
