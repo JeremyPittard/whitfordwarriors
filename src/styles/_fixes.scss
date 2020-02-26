@@ -12,3 +12,9 @@
     height: unset;
     padding: 20px 0;
 }
+
+.section {
+    @media (max-width: 768px) {
+        padding: 3rem 10px !important;
+    }
+}

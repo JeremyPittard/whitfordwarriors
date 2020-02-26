@@ -1,13 +1,26 @@
 .footer {
+    padding: 3rem 10px !important;
+    @media (min-width: 1024px) {
+        padding: 0 !important;
+    }
     background-color: $blue;
 }
 
 ul {
+    text-align: center !important;
+    @media (min-width: 1024px) {
+        text-align: right !important;
+    }
     a {
         text-decoration: underline;
     }
 }
 
 .social {
+    text-align: center !important;
+    @media (min-width: 1024px) {
+        text-align: right !important;
+    }
+
     padding: 0 !important;
 }
