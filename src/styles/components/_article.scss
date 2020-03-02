@@ -1,23 +1,27 @@
-.article-header {
-    color: $white;
-    background-color: $blue;
-    margin-bottom: 1rem;
-}
-
-.article-title {
-    text-transform: capitalize;
-}
-.article-title-container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-
-    @media (min-width: 1024px) {
-        margin-left: 2rem;
+.article {
+    &__header {
+        background-color: $blue;
+        color: $white;
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+    &__image-wrap {
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 50%;
+        }
     }
 
-    .honour-board & {
-        align-items: center;
+    &__details-wrap {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1rem;
+
+        @media (min-width: 768px) {
+            padding: 3rem;
+        }
     }
 }

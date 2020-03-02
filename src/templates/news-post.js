@@ -13,24 +13,24 @@ export const NewsPostTemplate = ({ content, contentComponent, description, title
     return (
         <>
             {helmet || ""}
+            <div className="article__header">
+                <div className="article__image-wrap">
+                    <PreviewCompatibleImage imageInfo={{ image: featuredimage, alt: `featured image thumbnail for post ${title}` }} />
+                </div>
 
-            <section className="section article-header">
-                <div className="columns">
-                    <div className="column is-4 is-offset-2">
-                        <PreviewCompatibleImage imageInfo={{ image: featuredimage, alt: `featured image thumbnail for post ${title}` }} />
-                    </div>
-                    <div className="columnm is-4 article-title-container">
-                        <h1 className="article-title is-size-1">{title}</h1>
-                        <em>published on: {date}</em>
-                        <em>{description}</em>
+                <div className="article__details-wrap">
+                    <h1 className="article-title is-size-1">{title}</h1>
+                    <em>published on: {date}</em>
+                    <em>{description}</em>
+                </div>
+            </div>
+            <div className="section">
+                <div className="columns is-multiline">
+                    <div className="column is-4 is-offset-4">
+                        <PostContent content={content} />
                     </div>
                 </div>
-            </section>
-            <section className="columns">
-                <div className="column is-5 is-offset-3">
-                    <PostContent content={content} />
-                </div>
-            </section>
+            </div>
         </>
     );
 };
