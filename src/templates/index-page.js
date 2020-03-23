@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({ image, title, subheading, mainpitch, descrip
                         display: "flex",
                         lineHeight: "1",
                         justifyContent: "space-around",
-                        alignItems: "left",
+                        alignItems: "center",
                         flexDirection: "column"
                     }}
                 >
