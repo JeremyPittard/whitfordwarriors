@@ -3,7 +3,8 @@ templateKey: board-post
 title: John Salinovich Medal
 description: Best & Fairest Leage
 featuredimage: /img/iconmonstr-trophy-6-240.png
----| **Season** | **Grade / Division** | **Ladder Position** | **Coach**              | **Best &amp; Fairest**           | **Runner Up\*\*** Best &amp; Fairest\*\* |
+---
+| **Season** | **Grade / Division** | **Ladder Position** | **Coach**              | **Best &amp; Fairest**           | **Runner Up\*\*** Best &amp; Fairest\*\* |
 | ---------- | -------------------- | ------------------- | ---------------------- | -------------------------------- | ---------------------------------------- |
 | 1976       | F                    | Runner Up           | William (Bill) Russell | Phil Roberts                     | P Holst                                  |
 | 1977       | F                    | Runner Up           | William (Bill) Russell | Greg Matsen                      |                                          |
@@ -48,4 +49,4 @@ featuredimage: /img/iconmonstr-trophy-6-240.png
 | 2016       | B                    | Runner Up           | Dylan Eiffler          | Ray Bartholomew &amp; Dan Hunt   | Mike Waddington                          |
 | 2017       | A                    | Tenth               | Dylan Eiffler          | Mike Waddington                  | James Sheehan-Nel                        |
 | 2018       | B                    | Third               | Dylan Eiffler          | Matthew Bluett                   | Troy Skilton                             |
-| 2019       | B                    |                     | Christian Kelly        |                                  |                                          |
+| 2019       | B                    | Third               | Christian Kelly        | Ben Mountford                    |  James Sheehan-Nel &Troy Skilton         |
