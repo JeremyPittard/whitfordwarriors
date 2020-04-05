@@ -15,9 +15,7 @@ export const PolicyRoll = props => {
                             <div className="is-parent column is-4 is-flex justify-center" key={post.id}>
                                 <a href={post.frontmatter.document.absolutePath} className="sponsor is-child blue-text policy-card" target="_blank" rel="noopener noreferrer" download>
                                     <img src={document} alt={post.frontmatter.title} />
-                                    <article>
-                                        {post.frontmatter.title} {index}
-                                    </article>
+                                    <article>{post.frontmatter.title}</article>
                                 </a>
                             </div>
                         </>
