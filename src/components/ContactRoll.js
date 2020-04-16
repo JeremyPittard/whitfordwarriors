@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const ContactList = props => {
+export const ContactList = (props) => {
     const { data } = props;
     const { edges: contacts } = data.allMarkdownRemark;
     return (
@@ -11,19 +11,17 @@ export const ContactList = props => {
                 <div className="columns is-parent is-multiline">
                     {contacts &&
                         contacts.map(({ node: contact }, index) => (
-                            <>
-                                <div className={"column is-4"}>
-                                    <ul key={`contact-${index}`}>
-                                        <li className={"map-section__contact"}>
-                                            <h3 className={"is-size-5"}>
-                                                <strong>{contact.frontmatter.title}:</strong> {contact.frontmatter.name}
-                                            </h3>
-                                        </li>
-                                        {contact.frontmatter.number && <li>Phone: {contact.frontmatter.number}</li>}
-                                        {contact.frontmatter.email && <li>Email: {contact.frontmatter.email}</li>}
-                                    </ul>
-                                </div>
-                            </>
+                            <div className={"column is-4"}>
+                                <ul key={`contact-${index}`}>
+                                    <li className={"map-section__contact"}>
+                                        <h3 className={"is-size-5"}>
+                                            <strong>{contact.frontmatter.title}:</strong> {contact.frontmatter.name}
+                                        </h3>
+                                    </li>
+                                    {contact.frontmatter.number && <li>Phone: {contact.frontmatter.number}</li>}
+                                    {contact.frontmatter.email && <li>Email: {contact.frontmatter.email}</li>}
+                                </ul>
+                            </div>
                         ))}
                 </div>
             </div>

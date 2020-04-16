@@ -8,8 +8,6 @@ import Colours from "../utils/colours";
 
 export const EventPostTemplate = ({ content, contentComponent, description, title, helmet, featuredimage, eventDate }) => {
     const PostContent = contentComponent || Content;
-    console.log(featuredimage);
-    console.log(featuredimage.childImageSharp.fluid.src);
     return (
         <>
             <div className="article__header">

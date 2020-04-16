@@ -4,30 +4,28 @@ import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Colours from "../utils/colours";
 
-export const EventsRoll = props => {
+export const EventsRoll = (props) => {
     const { data } = props;
     const { edges: posts } = data.allMarkdownRemark;
     return (
         <div className="columns is-multiline">
             {posts &&
                 posts.map(({ node: post }, index) => (
-                    <>
-                        <div className="is-parent column is-4" key={`event-${index}`}>
-                            <AniLink direction="down" duration={0.7} cover bg={Colours.blue} to={post.fields.slug} className="tile c-tile is-child box ">
-                                <article>
-                                    <PreviewCompatibleImage
-                                        imageInfo={{
-                                            image: post.frontmatter.featuredimage,
-                                            alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                                            class: `full-width-image`
-                                        }}
-                                    />
-                                    <h3>{post.frontmatter.title}</h3>
-                                    <p className="subtitle blue-text is-size-7">Event on: {post.frontmatter.eventDate}</p>
-                                </article>
-                            </AniLink>
-                        </div>
-                    </>
+                    <div className="is-parent column is-4" key={`event-${index}`}>
+                        <AniLink direction="down" duration={0.7} cover bg={Colours.blue} to={post.fields.slug} className="tile c-tile is-child box ">
+                            <article>
+                                <PreviewCompatibleImage
+                                    imageInfo={{
+                                        image: post.frontmatter.featuredimage,
+                                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                                        class: `full-width-image`,
+                                    }}
+                                />
+                                <h3>{post.frontmatter.title}</h3>
+                                <p className="subtitle blue-text is-size-7">Event on: {post.frontmatter.eventDate}</p>
+                            </article>
+                        </AniLink>
+                    </div>
                 ))}
         </div>
     );

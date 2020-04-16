@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-export const FullSPonsors = props => {
+export const FullSPonsors = (props) => {
     const { data } = props;
     const { edges: posts } = data.allMarkdownRemark;
 
@@ -12,18 +12,15 @@ export const FullSPonsors = props => {
                     // let i = index + 1;
                     // let delay = i < 4 ? `${i}00` : `${i - 3}00`;
 
-                    console.log(post.frontmatter.logo);
                     return (
-                        <>
-                            <div className="is-parent column is-4" key={post.id}>
-                                <a href={post.frontmatter.website} className="is-child sponsor" target="_blank" rel="noopener noreferrer">
-                                    <article>
-                                        <img src={post.frontmatter.logo.childImageSharp.fixed.src} alt={post.frontmatter.title} />
-                                        <h3>{post.frontmatter.title}</h3>
-                                    </article>
-                                </a>
-                            </div>
-                        </>
+                        <div className="is-parent column is-4" key={post.id}>
+                            <a href={post.frontmatter.website} className="is-child sponsor" target="_blank" rel="noopener noreferrer">
+                                <article>
+                                    <img src={post.frontmatter.logo.childImageSharp.fixed.src} alt={post.frontmatter.title} />
+                                    <h3>{post.frontmatter.title}</h3>
+                                </article>
+                            </a>
+                        </div>
                     );
                 })}
         </div>

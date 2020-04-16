@@ -8,8 +8,6 @@ import Colours from "../utils/colours";
 
 export const NewsPostTemplate = ({ content, contentComponent, description, title, helmet, featuredimage, date }) => {
     const PostContent = contentComponent || Content;
-    console.log(featuredimage);
-    console.log(featuredimage.childImageSharp.fluid.src);
     return (
         <>
             {helmet || ""}
