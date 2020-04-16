@@ -3,7 +3,8 @@ templateKey: board-post
 title: B&F Reserves
 description: Best & Fairest Reserves
 featuredimage: /img/iconmonstr-trophy-6-240.png
----| **Season** | **Grade / Division** | **Ladder** **Position** | **Coach**                         | **Best & Fairest**              | **Runner Up**                   |
+---
+| **Season** | **Grade / Division** | **Ladder** **Position** | **Coach**                         | **Best & Fairest**              | **Runner Up**                   |
 | ---------- | -------------------- | ----------------------- | --------------------------------- | ------------------------------- | ------------------------------- |
 | 1976       | G                    |                         | Darryl Sorenson                   | W Cooper                        | Colin Sharman &amp; Bob McGrath |
 | 1977       | G                    | Eighth                  | Stan Kelly                        | Stan Kelly                      | Bob McGrath                     |
@@ -48,4 +49,4 @@ featuredimage: /img/iconmonstr-trophy-6-240.png
 | 2016       | B Res                | Third                   | Adam Hunter                       | Steve Waddington                | Nick Goswell                    |
 | 2017       | A Res                | Fourth                  | Adam Hunter                       | Cory Hurley                     | Luke Forrestal                  |
 | 2018       | B Res                | Third                   | Christian Kelly                   | Michael Clark                   | Christian Kelly                 |
-| 2019       | B Res                |                         | Chris Keunen                      |                                 |                                 |
+| 2019       | B Res                | Sixth                   | Chris Keunen                      | Luke Forrestal                  | Ben Kuhl & Jake Marinovich      |
