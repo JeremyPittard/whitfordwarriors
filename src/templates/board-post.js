@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Content, { HTMLContent } from "../components/Content";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const BoardTemplate = ({ content, contentComponent, description, title, helmet, featuredimage }) => {
     const PostContent = contentComponent || Content;

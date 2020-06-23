@@ -4,7 +4,6 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import Colours from "../utils/colours";
 
 export const EventPostTemplate = ({ content, contentComponent, description, title, helmet, featuredimage, eventDate }) => {
     const PostContent = contentComponent || Content;
@@ -39,7 +38,7 @@ EventPostTemplate.propTypes = {
     title: PropTypes.string,
     helmet: PropTypes.object,
     featuredimage: PropTypes.object,
-    eventDate: PropTypes.string
+    eventDate: PropTypes.string,
 };
 
 const EventPost = ({ data }) => {
@@ -70,8 +69,8 @@ const EventPost = ({ data }) => {
 
 EventPost.propTypes = {
     data: PropTypes.shape({
-        markdownRemark: PropTypes.object
-    })
+        markdownRemark: PropTypes.object,
+    }),
 };
 
 export default EventPost;

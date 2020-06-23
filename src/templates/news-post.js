@@ -4,7 +4,6 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import Colours from "../utils/colours";
 
 export const NewsPostTemplate = ({ content, contentComponent, description, title, helmet, featuredimage, date }) => {
     const PostContent = contentComponent || Content;
@@ -40,7 +39,7 @@ NewsPostTemplate.propTypes = {
     title: PropTypes.string,
     helmet: PropTypes.object,
     featuredimage: PropTypes.object,
-    date: PropTypes.string
+    date: PropTypes.string,
 };
 
 const NewsPost = ({ data }) => {
@@ -71,8 +70,8 @@ const NewsPost = ({ data }) => {
 
 NewsPost.propTypes = {
     data: PropTypes.shape({
-        markdownRemark: PropTypes.object
-    })
+        markdownRemark: PropTypes.object,
+    }),
 };
 
 export default NewsPost;
