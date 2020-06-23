@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
@@ -34,7 +35,7 @@ BoardTemplate.propTypes = {
     contentComponent: PropTypes.func,
     description: PropTypes.string,
     title: PropTypes.string,
-    helmet: PropTypes.object
+    helmet: PropTypes.object,
 };
 
 const Board = ({ data }) => {
@@ -60,8 +61,8 @@ const Board = ({ data }) => {
 
 Board.propTypes = {
     data: PropTypes.shape({
-        markdownRemark: PropTypes.object
-    })
+        markdownRemark: PropTypes.object,
+    }),
 };
 
 export default Board;
