@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Content, { HTMLContent } from "../components/Content";
 
 export const BlogPostTemplate = ({ content, contentComponent, description, title, helmet }) => {
@@ -29,7 +28,7 @@ BlogPostTemplate.propTypes = {
     contentComponent: PropTypes.func,
     description: PropTypes.string,
     title: PropTypes.string,
-    helmet: PropTypes.object
+    helmet: PropTypes.object,
 };
 
 const BlogPost = ({ data }) => {
@@ -55,8 +54,8 @@ const BlogPost = ({ data }) => {
 
 BlogPost.propTypes = {
     data: PropTypes.shape({
-        markdownRemark: PropTypes.object
-    })
+        markdownRemark: PropTypes.object,
+    }),
 };
 
 export default BlogPost;
