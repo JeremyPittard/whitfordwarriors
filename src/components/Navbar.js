@@ -40,7 +40,14 @@ const Navbar = class extends React.Component {
                             <h3 className="has-text-weight-bold is-size-2 blue-text">WW</h3>
                         </AniLink>
                         {/* Hamburger menu */}
-                        <div className={`navbar-burger burger ${this.state.navBarActiveClass} `} data-target="navMenu" onClick={() => this.toggleHamburger()}>
+                        <div
+                            role="button"
+                            tabIndex="0"
+                            className={`navbar-burger burger ${this.state.navBarActiveClass} `}
+                            data-target="navMenu"
+                            onClick={() => this.toggleHamburger()}
+                            onKeyDown={(e) => e.key === "Enter" && this.toggleHamburger()}
+                        >
                             <div className="behind goalpost"></div>
                             <div className="goal goalpost"></div>
                             <div className="goal goalpost"></div>
