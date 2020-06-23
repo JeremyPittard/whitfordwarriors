@@ -24,7 +24,7 @@ const Footer = class extends React.Component {
                                 <section>
                                     <div className="content has-text-centered">
                                         <AniLink cover direction="down" duration={0.7} bg={Colours.blue} to="/" title="Logo">
-                                            <img alt="whitford amatuer football club logo" src={logo} alt="wafc" style={{ width: "14em", height: "10em" }} />
+                                            <img alt="whitford amatuer football club logo" src={logo} style={{ width: "14em", height: "10em" }} />
                                         </AniLink>
                                         <p>&copy; Copyright {year}</p>
                                     </div>
@@ -42,18 +42,18 @@ const Footer = class extends React.Component {
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="" className="white-text" target="_blank">
+                                        <a href="https://www.facebook.com/whitfordafc" className="white-text" target="_blank" rel="noopener noreferrer">
                                             Terms & Conditions
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" className="white-text" target="_blank">
+                                        <a href="https://www.facebook.com/whitfordafc" className="white-text" target="_blank" rel="noopener noreferrer">
                                             Privacy Policy
                                         </a>
                                     </li>
                                     <li>
                                         site by &nbsp;
-                                        <a href="https://jpittard.net" className="white-text" target="_blank">
+                                        <a href="https://jpittard.net" className="white-text" target="_blank" rel="noopener noreferrer">
                                             this guy.
                                         </a>
                                     </li>

@@ -7,7 +7,7 @@ const Navbar = class extends React.Component {
         super(props);
         this.state = {
             active: false,
-            navBarActiveClass: ""
+            navBarActiveClass: "",
         };
     }
 
@@ -15,17 +15,17 @@ const Navbar = class extends React.Component {
         // toggle the active boolean in the state
         this.setState(
             {
-                active: !this.state.active
+                active: !this.state.active,
             },
             // after state has been updated,
             () => {
                 // set the class in state for the navbar accordingly
                 this.state.active
                     ? this.setState({
-                          navBarActiveClass: "is-active"
+                          navBarActiveClass: "is-active",
                       })
                     : this.setState({
-                          navBarActiveClass: ""
+                          navBarActiveClass: "",
                       });
             }
         );
@@ -49,7 +49,7 @@ const Navbar = class extends React.Component {
                     </div>
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass} `}>
                         <div className="navbar-start has-text-centered">
-                            <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} duration={0.7} bg={Colours.blue} to="/news">
+                            <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} bg={Colours.blue} to="/news">
                                 News
                             </AniLink>
                             <AniLink className="navbar-item blue-text" cover direction="down" duration={0.7} bg={Colours.blue} to="/events">
