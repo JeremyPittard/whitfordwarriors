@@ -1,7 +1,7 @@
 ---
 templateKey: event-post
 title: Annual Sam Murphy Night
-eventDate: 2020-07-06T11:11:47.434Z
+eventDate: 2020-07-11T11:11:47.434Z
 date: 2020-07-06T11:11:47.453Z
 description: |-
   We’re on: IT’S THE FIRST EVENT OF THE SEASON!
