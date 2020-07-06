@@ -24,7 +24,7 @@
         "gatsby-source-filesystem": "^2.0.26",
         "gatsby-transformer-remark": "^2.6.9",
         "gatsby-transformer-sharp": "^2.1.9",
-        "gsap": "^3.0.4",
+        "gsap": "^3.3.4",
         "leaflet": "^1.6.0",
         "lodash": "^4.17.15",
         "lodash-webpack-plugin": "^0.11.4",
