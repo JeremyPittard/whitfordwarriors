@@ -7,6 +7,7 @@ import Colours from "../utils/colours";
 import SponsorsRoll from "../components/sponsorsRoll";
 import LogoSVG from "../utils/logoSVG";
 import LeafletMap from "../components/LeafletMap";
+import JuicerFeed from '../components/juicer';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -106,6 +107,7 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2 blue-text">
                       What's happening around the club
                     </h3>
+                    <JuicerFeed />
                     <BlogRoll />
                   </div>
                   <div className="column is-12">
