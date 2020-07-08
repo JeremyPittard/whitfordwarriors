@@ -4,16 +4,9 @@ const JuicerFeed = () => {
 
   useEffect(() => {
     const script = document.createElement("script");
-    const css = document.createElement("link");
-
     script.src = "https://assets.juicer.io/embed.js";
-    css.href = "https://assets.juicer.io/embed.css";
-    css.media = "all";
-    css.rel = "stylesheet";
-    css.type = "text/css";
     script.async = true;
 
-    document.head.append(css);
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
