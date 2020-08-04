@@ -34,7 +34,7 @@ export default class BlogIndexPage extends React.Component {
                                     We hope to hit the ground running so instead of starting a team this year we have started to do prep to make sure our club is in the best position possible to support putting teams out on the field.
                                     <br />
                                     to keep up to date with womens footy at the club please enter your email below. if you wish to help out, participate, coach or anything in between please feel free to contact{" "}
-                                    <a href="mailto:womensfootball@whitfordafc.com.au">womensfootball@whitofrdafc.com.au</a>
+                                    <a href="mailto:womensfootball@whitfordafc.com.au">womensfootball@whitfordafc.com.au</a>
                                 </p>
                                 <div className="content womens-footy-form">
                                     <WomensMailchimpSubscribe />
