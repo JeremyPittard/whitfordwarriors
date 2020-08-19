@@ -3,6 +3,7 @@ templateKey: news-post
 title: Women's Senior Coach EOI!
 date: 2020-08-19T12:01:44.108Z
 description: WHITFORD AFC – WOMENS SENIOR COACH EOI
+featuredpost: true
 featuredimage: /img/logo.svg
 type: post
 tages: post
