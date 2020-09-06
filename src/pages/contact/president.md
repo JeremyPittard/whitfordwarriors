@@ -2,7 +2,6 @@
 templateKey: contact-post
 title: President
 name: Kevin Burns
-email: president@whitfordafc.com.au
+email: president@whitfordwarriors.com.au
 number: 0435 476 656
 ---
-
