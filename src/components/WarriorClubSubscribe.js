@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import addToMailChimp from "gatsby-plugin-mailchimp";
-import { add } from "lodash";
 
 export const ClubMailchimpSubscribe = () => {
   const [email, setEmail] = useState(null);
@@ -10,10 +9,10 @@ export const ClubMailchimpSubscribe = () => {
   const [valid, setValid] = useState(true);
 
   const handleChange = (e) => {
-    e.target.name == "email" && setEmail(e.target.value);
-    e.target.name == "fname" && setFName(e.target.value);
-    e.target.name == "lname" && setLName(e.target.value);
-    e.target.name == "addy" && setAddy(e.target.value);
+    e.target.name === "email" && setEmail(e.target.value);
+    e.target.name === "fname" && setFName(e.target.value);
+    e.target.name === "lname" && setLName(e.target.value);
+    e.target.name === "addy" && setAddy(e.target.value);
 
   };
 

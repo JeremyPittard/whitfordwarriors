@@ -14,7 +14,7 @@ const JuicerFeed = () => {
   }, []);
 
   return (
-    <ul class="juicer-feed" data-feed-id="398840626962300" data-per='3' data-columns='3' data-truncate='75'>
+    <ul className="juicer-feed" data-feed-id="398840626962300" data-per='3' data-columns='3' data-truncate='75'>
     </ul>
   );
 };

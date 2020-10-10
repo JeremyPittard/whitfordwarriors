@@ -1,6 +1,6 @@
 import React from "react";
 import Colours from "../../utils/colours";
-import { ClubMailchimpSubscribe } from "../../components/WarriorCLubSubscribe";
+import { ClubMailchimpSubscribe } from "../../components/WarriorClubSubscribe";
 
 export default class BlogIndexPage extends React.Component {
     render() {
