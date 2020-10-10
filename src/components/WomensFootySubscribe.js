@@ -39,7 +39,7 @@ export const WomensMailchimpSubscribe = () => {
         <form onSubmit={e => handleSubmit(e)} className="has-text-left">
             <h4 className="white-text">Subscribe to our Newsletter</h4>
             <div className="input-wrapper">
-                <label htmlFor="email">Please enter your email for upodates</label>
+                <label htmlFor="email">Please enter your email for updates</label>
                 <input type="email" name="email" onChange={e => handleChange(e)} />
             </div>
             <input type="text" placeholder="name" className="name" onChange={handleValid} />
