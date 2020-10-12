@@ -28,8 +28,8 @@ export default class BlogIndexPage extends React.Component {
                     <div className="container">
                         <div className="columns is-centered">
                             <div className="column is-5">
-                                <h2 className="is-size-2">Coming Soon...</h2>
-                                <p>
+                                <h2 className="is-size-2" id='coming-soon'>Coming Soon...</h2>
+                                <p id='the-p'>
                                     Sign up below to be the first to be told about how to join 
                                 </p>
                                 <div className="content womens-footy-form">

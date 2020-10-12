@@ -5,6 +5,7 @@ export const ClubMailchimpSubscribe = () => {
   const [email, setEmail] = useState(null);
   const [fName, setFName] = useState(null);
   const [lName, setLName] = useState(null);
+  const [phone, setPhone] = useState(null);
   const [addy, setAddy] = useState(null);
   const [valid, setValid] = useState(true);
 
@@ -13,6 +14,7 @@ export const ClubMailchimpSubscribe = () => {
     e.target.name === "fname" && setFName(e.target.value);
     e.target.name === "lname" && setLName(e.target.value);
     e.target.name === "addy" && setAddy(e.target.value);
+    e.target.name === "phone" && setPhone(e.target.value);
 
   };
 
@@ -29,9 +31,14 @@ export const ClubMailchimpSubscribe = () => {
         FNAME: fName,
         LNAME: lName,
         ADDY: addy,
+        PHONE: phone
       })
         .then(({ msg, result }) => {
           console.log("msg", `${result}: ${msg}`);
+
+          document.getElementById('club-sub-form').style.display = 'none';
+          document.getElementById('the-p').style.display = 'none';
+          document.getElementById('coming-soon').innerHTML = 'Thanks! you will hear from us soon!'
 
           if (result !== "success") {
             throw msg;
@@ -39,7 +46,6 @@ export const ClubMailchimpSubscribe = () => {
         })
         .catch((err) => {
           console.log("err", err);
-          alert(err);
         });
     } else {
       console.log("something went wrong");
@@ -47,7 +53,7 @@ export const ClubMailchimpSubscribe = () => {
   };
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)} className="has-text-left">
+    <form onSubmit={(e) => handleSubmit(e)} className="has-text-left" id="club-sub-form">
       <h4 className="white-text">Subscribe to our Newsletter</h4>
       <div className="input-wrapper">
         <label htmlFor="email">First Name</label>
@@ -58,6 +64,11 @@ export const ClubMailchimpSubscribe = () => {
         <label htmlFor="email">Last Name</label>
 
         <input type="text" name="lname" onChange={(e) => handleChange(e)} />
+      </div>
+      <div className="input-wrapper">
+        <label htmlFor="email">Phone Number</label>
+
+        <input type="text" name="phone" onChange={(e) => handleChange(e)} />
       </div>
       <div className="input-wrapper">
         <label htmlFor="email">Mailing Address - use if you would prefer physical mail</label>
