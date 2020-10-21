@@ -1,11 +1,10 @@
 ---
 templateKey: board-post
 title: Football Department Award
-description: >-
-  Awarded to a member of the clubs Football Department, being Coaches, Assistant
-  Coaches, Football Manager, Team Manager, Medical Staff, or Umpires that
-  contribute above and beyond what their role would normally include, to the on
-  field football operations.
+description: Awarded to a member of the clubs Football Department, being
+  Coaches, Assistant Coaches, Football Manager, Team Manager, Medical Staff, or
+  Umpires that contribute above and beyond what their role would normally
+  include, to the on field football operations.
 featuredimage: /img/iconmonstr-trophy-6-240.png
 ---
 | **Season** | **Name**       |
@@ -22,5 +21,7 @@ featuredimage: /img/iconmonstr-trophy-6-240.png
 | 2016       | Adam Stuckey   |
 | 2017       | Lachlan Ward   |
 | 2018       | Rowan Ward     |
-| 2019       | Greg McFarlane & Rowan Ward|
+| 2019       | Greg McFarlane |
+|2019 | Rowan Ward|
+| 2020       | Paul Rogers |
 
