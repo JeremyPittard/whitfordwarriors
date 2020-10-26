@@ -50,4 +50,4 @@ featuredimage: /img/iconmonstr-trophy-6-240.png
 | 2017       | A                    | Tenth               | Dylan Eiffler          | Mike Waddington                  | James Sheehan-Nel                        |
 | 2018       | B                    | Third               | Dylan Eiffler          | Matthew Bluett                   | Troy Skilton                             |
 | 2019       | B                    | Third               | Christian Kelly        | Ben Mountford                    |  James Sheehan-Nel & Troy Skilton         |
-| 2020 | B | Fifth | Christian Kelly | Matt Bluett & Ben Mountford | Ben Allen & Chris Keunen & Troy Skilton |
+| 2020 | B | Fifth | Christian Kelly | Matt Bluett & Ben Mountford | Brendan Allen & Chris Keunen & Troy Skilton |
