@@ -50,3 +50,4 @@ featuredimage: /img/iconmonstr-trophy-6-240.png
 | 2017       | A Res                | Fourth                  | Adam Hunter                       | Cory Hurley                     | Luke Forrestal                  |
 | 2018       | B Res                | Third                   | Christian Kelly                   | Michael Clark                   | Christian Kelly                 |
 | 2019       | B Res                | Sixth                   | Chris Keunen                      | Luke Forrestal                  | Ben Kuhl & Jake Marinovich      |
+| 2020 | B Res | Runner Up | Chris Keunen | Robert Beeftink & Zac Mola | Matt Hurley |
