@@ -21,13 +21,13 @@ export default class BlogIndexPage extends React.Component {
                             padding: "1rem"
                         }}
                     >
-                        Latest News
+                        Ticket Store Coming Soon
                     </h1>
                 </div>
                 <section className="section">
                     <div className="container">
                         <div className="content">
-                            <NewsRoll />
+                            
                         </div>
                     </div>
                 </section>
