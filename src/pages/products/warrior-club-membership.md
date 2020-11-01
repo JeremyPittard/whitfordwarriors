@@ -5,6 +5,6 @@ sku: war001
 totalQuantity: 11
 amount: 30
 image: /img/android-chrome-512x512.png
-description: test warriors club item 3
+description: test warriors club item 4
 currency: AUD
 ---
