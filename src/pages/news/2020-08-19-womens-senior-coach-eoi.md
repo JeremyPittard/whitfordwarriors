@@ -2,7 +2,7 @@
 templateKey: news-post
 title: Women's Senior Coach EOI!
 date: 2020-08-19T12:01:44.108Z
-description: WHITFORD AFC – WOMENS SENIOR COACH EOI
+description: "WHITFORD AFC – WOMENS SENIOR COACH EOI "
 featuredpost: true
 featuredimage: /img/warrior.png
 type: post
@@ -46,11 +46,9 @@ The following attributes are necessary:
 * Able to liaise, represent and promote women’s football through Junior and WAFL
   pathways.
 
-
-
 \
 If you require any more information or would like to discuss potential opportunities, please
-do not hesitate to contact Marcus or Michael.
+do not hesitate to contact Marcus or Michael. 
 
 M: Marcus Thompson 0431 073 443
 M: Michael Waddington 0472 523 647
