@@ -44,7 +44,7 @@ The following attributes are necessary:
 * Willingness to work collaboratively within our coaching team
 * Able to Develop and Guide Young Adults to progress through there football journey
 * Able to liaise, represent and promote women’s football through Junior and WAFL
-  pathways.
+  pathways. 
 
 \
 If you require any more information or would like to discuss potential opportunities, please
