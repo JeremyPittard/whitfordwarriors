@@ -2,7 +2,7 @@
 templateKey: product
 title: Test product
 sku: test001
-totalQuantity: 150
+totalQuantity: 1506
 isInfinite: true
 amount: 4500
 image: /img/android-chrome-192x192.png
