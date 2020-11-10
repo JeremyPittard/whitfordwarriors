@@ -1,6 +1,6 @@
 ---
 templateKey: product
-title: Test product
+title: Test products
 sku: test001
 totalQuantity: 1506
 isInfinite: true
