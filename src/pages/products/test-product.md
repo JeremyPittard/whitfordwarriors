@@ -6,6 +6,6 @@ totalQuantity: 150
 isInfinite: false
 amount: 45
 image: /img/android-chrome-192x192.png
-description: description
+description: description m
 currency: AUD
 ---
