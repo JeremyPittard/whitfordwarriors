@@ -21,9 +21,10 @@ module.exports = {
             options: {
                 endpoint: "https://whitfordafc.us12.list-manage.com/subscribe/post?u=541768944af1bffb0bbb9190e&amp;id=86af9a9411"
             }
+        },{
+            resolve: "gatsby-plugin-sass",
         },
         "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sass",
         "gatsby-plugin-polyfill-io",
         {
             // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -87,7 +88,7 @@ module.exports = {
             resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
             options: {
                 develop: true, // Activates purging in npm run develop
-                purgeOnly: ["/all.sass", "../styles/main.scss"] // applies purging only on the bulma css file
+                purgeOnly: ["all.sass", "../styles/main.scss"] // applies purging only on the bulma css file
             }
         }, // must be after other CSS plugins
         "gatsby-plugin-netlify" // make sure to keep it last in the array
