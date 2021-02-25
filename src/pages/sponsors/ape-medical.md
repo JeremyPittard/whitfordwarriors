@@ -1,6 +1,7 @@
 ---
 templateKey: sponsor-post
 title: APE Medical
+isMajor: true
 logo: /img/image001.jpg
 description: >-
   Australian Physiotherapy Equipment (APE) is owned and operated by Sports
