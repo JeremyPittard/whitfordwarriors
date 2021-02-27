@@ -57,7 +57,7 @@ export const FullSPonsors = (props) => {
 const Posts = () => {
     const data = useStaticQuery(graphql`
         query FullSPonsorsQuery {
-            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___priority] }, filter: { frontmatter: { templateKey: { eq: "sponsor-post" } } }) {
+            allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___priority] }, filter: { frontmatter: { templateKey: { eq: "sponsor-post" } } }) {
                 edges {
                     node {
                         excerpt(pruneLength: 400)
