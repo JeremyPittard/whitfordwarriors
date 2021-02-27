@@ -8,5 +8,6 @@ description: >-
   settlements, family transfers, Commercial, subdivisions and vacant land. All
   fees are negotiable.
 website: 'https://www.facebook.com/McGeeSettlements/'
+priority: 6
 ---
 

@@ -12,5 +12,6 @@ description: >-
   company for the construction of their project which in turn offers them
   considerable time and cost savings.
 website: 'https://www.mgccivil.com.au/'
+priority: 7
 ---
 

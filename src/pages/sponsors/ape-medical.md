@@ -23,4 +23,5 @@ description: >-
 
   Our aim at APE is to provide an efficient, professional service and excellent value on the biggest range of Sports Medicine and Rehabilitation products.
 website: https://www.apemedical.com.au/
+priority: 13
 ---

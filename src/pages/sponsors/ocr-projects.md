@@ -10,5 +10,6 @@ description: >-
   Perth metropolitan area and available for projects in the south west region of
   WA.
 website: 'http://ocrprojects.com.au/'
+priority: 4
 ---
 

@@ -13,5 +13,6 @@ description: >-
   receiving the highest quality of service. Boasting many years of experience
   you can entrust your trees to the very capable hands of our professionals
 website: 'http://www.professionaltreesolutions.com.au/'
+priority: 12
 ---
 

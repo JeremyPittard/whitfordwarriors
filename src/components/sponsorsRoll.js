@@ -53,7 +53,7 @@ export const SponsorsRoll = (props) => {
 const Posts = () => {
     const data = useStaticQuery(graphql`
         query SponsorsRollQuery {
-            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }, filter: { frontmatter: { isMajor: { eq: true } } }) {
+            allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___priority] }, filter: { frontmatter: { isMajor: { eq: true } } }) {
                 edges {
                     node {
                         excerpt(pruneLength: 400)

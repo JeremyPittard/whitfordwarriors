@@ -17,5 +17,6 @@ description: >-
   Come in and introduce yourself to one of the team and let us help you find the
   perfect treat to take home with you.
 website: 'http://www.liquorbaronshillarys.com.au/'
+priority: 8
 ---
 

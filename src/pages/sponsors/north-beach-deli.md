@@ -19,5 +19,6 @@ description: >-
 
   We can help with that too.
 website: 'https://northbeachdeli.com.au/'
+priority: 5
 ---
 

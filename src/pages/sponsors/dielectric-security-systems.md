@@ -10,5 +10,6 @@ description: >-
   assured that we are always at the forefront of security and security
   technology.
 website: 'https://dielectric.com.au/'
+priority: 9
 ---
 

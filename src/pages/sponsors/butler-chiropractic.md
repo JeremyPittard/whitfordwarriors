@@ -7,5 +7,6 @@ description: >-
   Servicing Perth's northern suburbs with quality personalised care and
   attention.
 website: 'https://butlerchiropractic.com.au/'
+priority: 10
 ---
 
