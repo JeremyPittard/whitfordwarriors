@@ -59,6 +59,8 @@ collections:
           - { label: "Sponsor Logo", name: "logo", widget: image }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Website", name: "website", widget: "string" }
+          - { label: "Priority", name: "priority", widget: "number", value_type: "int"}
+
 
     - name: "boards"
       label: "Honour Boards"
@@ -95,21 +97,6 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone Number", name: "number", widget: "string", required: false }
-
-    - name: "products"
-      label: "Products"
-      label_singular: "Product"
-      folder: "src/pages/products"
-      create: true
-      slug: "{{slug}}"
-      fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "product" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "SKU", name: "sku", widget: "string" }
-          - { label: "Price", name: "amount", widget: "number", value_type: "int" }
-          - { label: "Product Image", name: "image", widget: image }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Currency", name: "currency", widget: "hidden", default: "AUD" }
 
     - name: "pages"
       label: "Pages"
