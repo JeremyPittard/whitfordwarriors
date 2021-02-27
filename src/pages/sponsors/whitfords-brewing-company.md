@@ -8,6 +8,6 @@ description: >-
   suburbs!
 
   card
-website: 'https://www.whitfordsbrewingco.com.au/'
+website: https://www.whitfordsbrewingco.com.au/
+priority: 1
 ---
-
