@@ -2,7 +2,7 @@
 templateKey: sponsor-post
 title: O'Donnel Lawyers
 isMajor: true
-logo: /img/g1017.png
+logo: /img/frame-1.png
 description: >-
   Based in Hillarys, our team work alongside you to understand your unique
   circumstances, then provide an equally unique solution. We’re committed to
