@@ -58,7 +58,7 @@
 
 .full-width-image {
 	width: 100vw;
-	height: 400px;
+	min-height: 400px;
 	background-size: cover;
 	background-position: bottom;
 	display: flex;
