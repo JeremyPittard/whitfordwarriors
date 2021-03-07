@@ -1,6 +1,6 @@
 ---
 templateKey: sponsor-post
-title: O'Donnel Lawyers
+title: O'Donnell Lawyers
 isMajor: true
 logo: /img/frame-1.png
 description: >-
