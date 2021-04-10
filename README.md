@@ -1,3 +1,29 @@
+# wafc
+
+built with gatsby + netlify cms starter
+
+### quick turnarounds = long todo lists 😭
+
+
+- strip out all of the bulma css stuff
+- get the club active enough on posting so I can remove the ugly instagram
+feed 
+- re do header for news and events pages
+- better page transitions
+- abstract the mapping function used in the 'roll' type components to a component with props to be passed
+- make the map better
+- better forms experience
+- although a content model based cms - attemmpt to make a basic page template so the club can make pages in the cms
+- drop size of icons on honour boards
+- find other icons (club only used the cups...)
+- go through and optimise photo's 
+- pagination of articles
+- out on the full 404 page
+- individual sponsors page with details (need details provided first)
+- more stuff to tie the netball club in
+- link to juniors somewhere appropriate and consistent
+- preview templates in netlify (the that were working had to be turned off due to a breaking gatsby change in feb 21)
+- look into scraping fixtures/find api that is affordable to grass roots clubs (unlike the official one)
 # Gatsby + Netlify CMS Starter
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
