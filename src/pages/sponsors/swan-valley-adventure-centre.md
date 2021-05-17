@@ -8,6 +8,6 @@ description: >-
   adventure, that is challenging and exciting.
 
   School Camps, Sports Camps, Music Camps Day excursions, Team- Building, Birthday Parties, School Holiday Programs, Meeting Rooms.
-website: https://www.facebook.com/swanvalleyadventurecentre/about/?ref=page_internal
+website: https://www.facebook.com/swanvalleyadventurecentre/
 priority: 22
 ---
