@@ -19,11 +19,12 @@ export const IndexPageTemplate = ({
   title,
   subheading,
   mainpitch,
-  description,
   intro,
   hideImage,
 }) => {
   useEffect(() => {
+    if (typeof document === "undefined") return;
+
     gsap.set(".intro-blurb", { autoAlpha: 0, y: 10 });
 
     gsap.to(".intro-blurb", {

@@ -14,16 +14,23 @@ export const BlogRoll = (props) => {
     const { edges: posts } = data.allMarkdownRemark;
 
     useEffect(() => {
-        gsap.set('.blog-card', {autoAlpha: 0, y: 10})
+        if (typeof document === "undefined") {
+            return;
+        }
+        else {
 
-        ScrollTrigger.batch(".blog-card", {
-            interval: 0.1, // time window (in seconds) for batching to occur. 
-            batchMax: 3,   // maximum batch size (targets). Can be function-based for dynamic values
-            onEnter: batch => gsap.to(batch, {autoAlpha: 1, y: 0, stagger: {each: 0.15, grid: [1, 3]}, overwrite: true}),
-            start: "top 85%",
-          });
-          
-          ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".box", {y: 0}));
+            
+            gsap.set('.blog-card', {autoAlpha: 0, y: 10})
+            
+            ScrollTrigger.batch(".blog-card", {
+                interval: 0.1, // time window (in seconds) for batching to occur. 
+                batchMax: 3,   // maximum batch size (targets). Can be function-based for dynamic values
+                onEnter: batch => gsap.to(batch, {autoAlpha: 1, y: 0, stagger: {each: 0.15, grid: [1, 3]}, overwrite: true}),
+                start: "top 85%",
+            });
+            
+            ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".box", {y: 0}));
+        }
     }, [])
 
     return (

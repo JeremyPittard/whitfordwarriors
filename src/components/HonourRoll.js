@@ -19,7 +19,7 @@ export const HonourRoll = props => {
                                         imageInfo={{
                                             image: post.frontmatter.featuredimage,
                                             alt: `Icon for ${post.frontmatter.title}`,
-                                            class: `honour-icon`
+                                            class: `honour-icon`,
                                         }}
                                     />
                                     <h3>{post.frontmatter.title}</h3>

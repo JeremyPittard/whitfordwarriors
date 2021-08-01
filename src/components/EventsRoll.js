@@ -15,6 +15,8 @@ export const EventsRoll = (props) => {
 
     
     useEffect(() => {
+        if (typeof document === "undefined") return;
+
         gsap.set('.blog-card', {autoAlpha: 0, y: 10})
 
         ScrollTrigger.batch(".blog-card", {
