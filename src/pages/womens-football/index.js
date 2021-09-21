@@ -5,47 +5,59 @@ import { WomensMailchimpSubscribe } from "../../components/WomensFootySubscribe"
 export default class BlogIndexPage extends React.Component {
     render() {
         return (
-            <>
-                <div
-                    className="full-width-image-container margin-top-0 filtered"
-                    style={{
-                        backgroundImage: `url('/img/womens-footy.jpg')`
-                    }}
-                >
-                    <h1
-                        className="has-text-weight-bold is-size-1"
-                        style={{
-                            backgroundColor: Colours.blue,
-                            color: "white",
-                            padding: "1rem"
-                        }}
-                    >
-                        Womens Footy
-                    </h1>
+          <>
+            <div
+              className="full-width-image-container margin-top-0 filtered"
+              style={{
+                backgroundImage: `url('/img/womens-footy.jpg')`,
+              }}
+            >
+              <h1
+                className="has-text-weight-bold is-size-1"
+                style={{
+                  backgroundColor: Colours.blue,
+                  color: "white",
+                  padding: "1rem",
+                }}
+              >
+                Womens Footy
+              </h1>
+            </div>
+            <section className="section">
+              <div className="container">
+                <div className="columns is-centered">
+                  <div className="column is-5">
+                    <h2 className="is-size-2">
+                      Womens Footy is coming in 2021
+                    </h2>
+                    <p>
+                      Whitford Amateur Football Club is proud to have women's
+                      teams playing for the first time in 2021.<br /><br/>Whitford AFC is
+                      committed to providing all women with an opportunity to
+                      play Australian Rules football and to enjoy our great game
+                      in a positive and welcoming club environment.<br/> <br/> Players of
+                      all ages, levels of experience and abilities are welcome
+                      to join us either as a player or simply to be involved
+                      offering off field support. <br /><br/>If you enjoy keeping fit,
+                      being part of a team and looking for a winter sport, then
+                      joining our Whitford Warriors women’s football team could
+                      be for you.
+                    </p>
+                    <h2>
+                    TRAINING
+                    </h2>
+<p>
+
+Training takes place weekly at the club's MacDonald Reserve facility in Padbury each Tuesdayand Thursday from 5.45pm (for a 6.00 pm start)<br /><br/> 
+Our coaches tailor sessions to ensure that all players are developing their skills and improving both individually and as a team. <br /><br/>
+We have a top-quality clubroom facility, floodlights and have uniforms and equipment available to players.<br /><br/> Bring your shoes, boots, fitness gear and get ready to have some fun!
+</p>
+ 
+                  </div>
                 </div>
-                <section className="section">
-                    <div className="container">
-                        <div className="columns is-centered">
-                            <div className="column is-5">
-                                <h2 className="is-size-2">Womens Footy is coming in 2021</h2>
-                                <p>
-                                    Our Women’s team is getting ready for season 2021 with round kicking off on 24 April 2021 and the club is keen to shore up its playing numbers.
-                                    Entering their first season in the competition, the women have embraced every challenge and continue to build on their skills and game sense ready for round 1.
-                                    Training is on Tuesday and Thursday nights from 5.45pm at MacDonald Reserve, Padbury. <br/> <br/>
-                                    If you enjoy keeping fit, being part of a team and looking for a winter sport, then joining our Warriors women’s team could be the thing for you.
-                                    No experience required with plenty of time at training to improve and develop your skills with our experienced and dedicated coaching team.
-                                    While there is enough talent to take the field for the 2021 campaign, the club continues to welcome players to ensure there is adequate coverage for the possible absence of players through unavailability.
-                                    Anyone interested in playing or offering support in an off-field capacity should contact Brett on <a href="tel:0477775118">0477 775 118</a> or email <a href="mailto:womensfootball@whitfordwarriors.com.au">womensfootball@whitfordwarriors.com.au</a>.
-                                    Players who have never played Australian football before are just as welcome as those who have experience in the sport.
-                                </p>
-                                    <div className="content womens-footy-form">
-                                    <WomensMailchimpSubscribe />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </>
+              </div>
+            </section>
+          </>
         );
     }
 }
