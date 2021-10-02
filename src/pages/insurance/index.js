@@ -7,7 +7,7 @@ const InsurancePage = () => {
       <div
         className="full-width-image-container margin-top-0 filtered"
         style={{
-          backgroundImage: `url('/img/womens-footy.jpg')`,
+          backgroundColor: Colours.blue,
         }}
       >
         <h1
