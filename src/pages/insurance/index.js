@@ -5,7 +5,7 @@ const InsurancePage = () => {
   return (
     <>
       <div
-        className="full-width-image-container margin-top-0 filtered"
+        className="full-width-image-container margin-top-0"
         style={{
           backgroundColor: Colours.blue,
         }}
