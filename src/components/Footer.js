@@ -7,8 +7,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Colours from "../utils/colours";
 import { MailchimpSubscribe } from "../components/mailchimpSubscribe";
 
-const Footer = class extends React.Component {
-    render() {
+const Footer = () => {
         const year = new Date().getFullYear();
         return (
             <footer className="footer has-background-body has-text-white-ter">
@@ -64,7 +63,6 @@ const Footer = class extends React.Component {
                 </div>
             </footer>
         );
-    }
 };
 
 export default Footer;
